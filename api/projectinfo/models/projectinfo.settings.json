@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projectinfos",
+  "info": {
+    "name": "projectinfo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "text"
+    },
+    "idd": {
+      "type": "biginteger"
+    }
+  }
+}

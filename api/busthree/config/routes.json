@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/busthrees",
+      "handler": "busthree.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busthrees/count",
+      "handler": "busthree.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busthrees/:id",
+      "handler": "busthree.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/busthrees",
+      "handler": "busthree.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/busthrees/:id",
+      "handler": "busthree.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/busthrees/:id",
+      "handler": "busthree.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

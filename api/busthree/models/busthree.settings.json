@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "busthrees",
+  "info": {
+    "name": "busthree"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "year_three": {
+      "type": "decimal"
+    },
+    "year_two": {
+      "type": "decimal"
+    },
+    "year_one": {
+      "type": "decimal"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "busthreedetails": {
+      "via": "busthree",
+      "collection": "busthreedetail"
+    }
+  }
+}

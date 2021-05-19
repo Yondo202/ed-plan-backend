@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/busthreedetails",
+      "handler": "busthreedetail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busthreedetails/count",
+      "handler": "busthreedetail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busthreedetails/:id",
+      "handler": "busthreedetail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/busthreedetails",
+      "handler": "busthreedetail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/busthreedetails/:id",
+      "handler": "busthreedetail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/busthreedetails/:id",
+      "handler": "busthreedetail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/businessinfoones",
+      "handler": "businessinfoone.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/businessinfoones/count",
+      "handler": "businessinfoone.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/businessinfoones/:id",
+      "handler": "businessinfoone.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/businessinfoones",
+      "handler": "businessinfoone.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/businessinfoones/:id",
+      "handler": "businessinfoone.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/businessinfoones/:id",
+      "handler": "businessinfoone.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

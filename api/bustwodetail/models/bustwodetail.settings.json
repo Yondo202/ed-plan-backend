@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bustwodetails",
+  "info": {
+    "name": "bustwodetail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "year_one": {
+      "type": "decimal"
+    },
+    "year_two": {
+      "type": "decimal"
+    },
+    "year_three": {
+      "type": "decimal"
+    },
+    "bustwo": {
+      "model": "bustwo",
+      "via": "bustwodetails"
+    }
+  }
+}

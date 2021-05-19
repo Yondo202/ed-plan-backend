@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infotwos",
+  "info": {
+    "name": "infotwo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "register": {
+      "type": "biginteger"
+    },
+    "comp_name": {
+      "type": "string"
+    },
+    "approve_date": {
+      "type": "date"
+    },
+    "sort": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "count": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

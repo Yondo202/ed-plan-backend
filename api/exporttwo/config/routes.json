@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exporttwos",
+      "handler": "exporttwo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exporttwos/count",
+      "handler": "exporttwo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exporttwos/:id",
+      "handler": "exporttwo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exporttwos",
+      "handler": "exporttwo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exporttwos/:id",
+      "handler": "exporttwo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exporttwos/:id",
+      "handler": "exporttwo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

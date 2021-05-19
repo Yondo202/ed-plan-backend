@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exporttwos",
+  "info": {
+    "name": "exporttwo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "idd": {
+      "type": "biginteger"
+    }
+  }
+}

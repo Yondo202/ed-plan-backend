@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approves",
+  "info": {
+    "name": "approve"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "approve": {
+      "type": "boolean"
+    },
+    "idd": {
+      "type": "biginteger"
+    }
+  }
+}

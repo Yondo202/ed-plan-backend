@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infotwodetails",
+  "info": {
+    "name": "infotwodetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "direct": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

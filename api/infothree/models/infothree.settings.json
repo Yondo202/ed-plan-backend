@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infothrees",
+  "info": {
+    "name": "infothree"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "category": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "approve_date": {
+      "type": "date"
+    },
+    "possess_percent": {
+      "type": "decimal"
+    }
+  }
+}

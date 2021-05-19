@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bustwos",
+      "handler": "bustwo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bustwos/count",
+      "handler": "bustwo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bustwos/:id",
+      "handler": "bustwo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bustwos",
+      "handler": "bustwo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bustwos/:id",
+      "handler": "bustwo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bustwos/:id",
+      "handler": "bustwo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

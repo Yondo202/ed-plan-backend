@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businessinfoones",
+  "info": {
+    "name": "businessinfoone"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "idd": {
+      "type": "biginteger"
+    }
+  }
+}

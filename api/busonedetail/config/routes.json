@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/busonedetails",
+      "handler": "busonedetail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busonedetails/count",
+      "handler": "busonedetail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/busonedetails/:id",
+      "handler": "busonedetail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/busonedetails",
+      "handler": "busonedetail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/busonedetails/:id",
+      "handler": "busonedetail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/busonedetails/:id",
+      "handler": "busonedetail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

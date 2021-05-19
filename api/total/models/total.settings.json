@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "totals",
+  "info": {
+    "name": "total",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectinfo": {
+      "type": "boolean",
+      "default": false
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "infoone": {
+      "type": "boolean",
+      "default": false
+    },
+    "infotwo": {
+      "type": "boolean",
+      "default": false
+    },
+    "infothree": {
+      "type": "boolean"
+    },
+    "businessone": {
+      "type": "boolean"
+    },
+    "busone": {
+      "type": "boolean"
+    },
+    "bustwo": {
+      "type": "boolean"
+    },
+    "exportone": {
+      "type": "boolean"
+    },
+    "exporttwo": {
+      "type": "boolean"
+    }
+  }
+}

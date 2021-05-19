@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infotwodetails",
+      "handler": "infotwodetail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infotwodetails/count",
+      "handler": "infotwodetail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infotwodetails/:id",
+      "handler": "infotwodetail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infotwodetails",
+      "handler": "infotwodetail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infotwodetails/:id",
+      "handler": "infotwodetail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infotwodetails/:id",
+      "handler": "infotwodetail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

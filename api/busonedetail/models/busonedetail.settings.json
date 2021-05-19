@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "busonedetails",
+  "info": {
+    "name": "busonedetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc": {
+      "type": "string"
+    },
+    "year_one": {
+      "type": "decimal"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "year_two": {
+      "type": "decimal"
+    },
+    "year_three": {
+      "type": "decimal"
+    },
+    "busone": {
+      "model": "busone",
+      "via": "busonedetails"
+    }
+  }
+}

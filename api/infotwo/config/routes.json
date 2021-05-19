@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/infotwos",
+      "handler": "infotwo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infotwos/count",
+      "handler": "infotwo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/infotwos/:id",
+      "handler": "infotwo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/infotwos",
+      "handler": "infotwo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/infotwos/:id",
+      "handler": "infotwo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/infotwos/:id",
+      "handler": "infotwo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
