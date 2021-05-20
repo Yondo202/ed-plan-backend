@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "approves",
   "info": {
-    "name": "approve"
+    "name": "approve",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,6 +17,9 @@
     },
     "idd": {
       "type": "biginteger"
+    },
+    "seen": {
+      "type": "boolean"
     }
   }
 }

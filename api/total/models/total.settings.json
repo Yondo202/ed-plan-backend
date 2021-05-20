@@ -44,6 +44,24 @@
     },
     "exporttwo": {
       "type": "boolean"
+    },
+    "m_one": {
+      "type": "boolean"
+    },
+    "m_two": {
+      "type": "boolean"
+    },
+    "m_three": {
+      "type": "boolean"
+    },
+    "m_four": {
+      "type": "boolean"
+    },
+    "m_five": {
+      "type": "boolean"
+    },
+    "financeplan": {
+      "type": "boolean"
     }
   }
 }

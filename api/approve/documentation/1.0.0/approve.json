@@ -528,6 +528,9 @@
           "idd": {
             "type": "integer"
           },
+          "seen": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -541,6 +544,9 @@
           },
           "idd": {
             "type": "integer"
+          },
+          "seen": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/totals": {
+    "/finance-plans": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Total"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Finance-plan"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Total"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewTotal"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/totals/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Finance-plan"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewFinance-plan"
+              }
+            }
+          }
+        }
       }
     },
-    "/totals/{id}": {
+    "/finance-plans/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Finance-plan"
+        ],
+        "parameters": []
+      }
+    },
+    "/finance-plans/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Finance-plan"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Finance-plan"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewFinance-plan"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Finance-plan"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Total": {
+      "Finance-plan": {
         "required": [
           "id"
         ],
@@ -522,56 +535,23 @@
           "id": {
             "type": "string"
           },
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "titile": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "time": {
+            "type": "string"
+          },
+          "response_person": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
-          },
-          "m_one": {
-            "type": "boolean"
-          },
-          "m_two": {
-            "type": "boolean"
-          },
-          "m_three": {
-            "type": "boolean"
-          },
-          "m_four": {
-            "type": "boolean"
-          },
-          "m_five": {
-            "type": "boolean"
-          },
-          "financeplan": {
-            "type": "boolean"
+          "total": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -579,58 +559,25 @@
           }
         }
       },
-      "NewTotal": {
+      "NewFinance-plan": {
         "properties": {
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "titile": {
+            "type": "string"
+          },
+          "budget": {
+            "type": "number"
+          },
+          "time": {
+            "type": "string"
+          },
+          "response_person": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
-          },
-          "m_one": {
-            "type": "boolean"
-          },
-          "m_two": {
-            "type": "boolean"
-          },
-          "m_three": {
-            "type": "boolean"
-          },
-          "m_four": {
-            "type": "boolean"
-          },
-          "m_five": {
-            "type": "boolean"
-          },
-          "financeplan": {
-            "type": "boolean"
+          "total": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -646,9 +593,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Total"
-    }
-  ]
+  "tags": []
 }

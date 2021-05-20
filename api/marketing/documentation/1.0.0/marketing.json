@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/totals": {
+    "/marketings": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Total"
+                    "$ref": "#/components/schemas/Marketing"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Marketing"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewMarketing"
               }
             }
           }
         }
       }
     },
-    "/totals/count": {
+    "/marketings/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "parameters": []
       }
     },
-    "/totals/{id}": {
+    "/marketings/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Marketing"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Marketing"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewMarketing"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Marketing"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Total": {
+      "Marketing": {
         "required": [
           "id"
         ],
@@ -522,38 +522,11 @@
           "id": {
             "type": "string"
           },
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "body": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
-          },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
           },
           "m_one": {
             "type": "boolean"
@@ -570,8 +543,8 @@
           "m_five": {
             "type": "boolean"
           },
-          "financeplan": {
-            "type": "boolean"
+          "title": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -579,40 +552,13 @@
           }
         }
       },
-      "NewTotal": {
+      "NewMarketing": {
         "properties": {
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "body": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
-          },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
           },
           "m_one": {
             "type": "boolean"
@@ -629,8 +575,8 @@
           "m_five": {
             "type": "boolean"
           },
-          "financeplan": {
-            "type": "boolean"
+          "title": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -648,7 +594,7 @@
   },
   "tags": [
     {
-      "name": "Total"
+      "name": "Marketing"
     }
   ]
 }

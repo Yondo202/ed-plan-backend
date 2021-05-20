@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finance_plans",
+  "info": {
+    "name": "finance-plan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titile": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "float"
+    },
+    "time": {
+      "type": "string"
+    },
+    "response_person": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "total": {
+      "type": "decimal"
+    }
+  }
+}
