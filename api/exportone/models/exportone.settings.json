@@ -29,6 +29,13 @@
     },
     "code": {
       "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "export_product": {
+      "model": "export-product",
+      "via": "exportones"
     }
   }
 }

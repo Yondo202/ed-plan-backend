@@ -528,6 +528,43 @@
           "idd": {
             "type": "integer"
           },
+          "parent": {
+            "type": "string"
+          },
+          "export_product": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "exporttwo": {
+                "type": "string"
+              },
+              "exportones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -541,6 +578,12 @@
           },
           "idd": {
             "type": "integer"
+          },
+          "parent": {
+            "type": "string"
+          },
+          "export_product": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

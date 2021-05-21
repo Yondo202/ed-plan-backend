@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "approves",
+  "collectionName": "export_products",
   "info": {
-    "name": "approve",
-    "description": ""
+    "name": "export-product"
   },
   "options": {
     "increments": true,
@@ -12,23 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "approve": {
-      "type": "boolean"
-    },
     "idd": {
       "type": "biginteger"
     },
-    "seen": {
-      "type": "boolean"
-    },
-    "year_one": {
+    "name": {
       "type": "string"
     },
-    "year_two": {
-      "type": "string"
+    "exporttwo": {
+      "via": "export_product",
+      "model": "exporttwo"
     },
-    "year_three": {
-      "type": "string"
+    "exportones": {
+      "via": "export_product",
+      "collection": "exportone"
     }
   }
 }

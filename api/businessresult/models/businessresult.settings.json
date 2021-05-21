@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "approves",
+  "collectionName": "businessresults",
   "info": {
-    "name": "approve",
-    "description": ""
+    "name": "businessresult"
   },
   "options": {
     "increments": true,
@@ -12,23 +11,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "approve": {
-      "type": "boolean"
-    },
     "idd": {
       "type": "biginteger"
     },
-    "seen": {
-      "type": "boolean"
+    "code": {
+      "type": "biginteger"
+    },
+    "desc": {
+      "type": "string"
     },
     "year_one": {
-      "type": "string"
+      "type": "float"
     },
     "year_two": {
-      "type": "string"
+      "type": "float"
     },
     "year_three": {
-      "type": "string"
+      "type": "float"
     }
   }
 }

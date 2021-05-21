@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/exportones": {
+    "/businessresults": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exportone"
+                    "$ref": "#/components/schemas/Businessresult"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Businessresult"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewBusinessresult"
               }
             }
           }
         }
       }
     },
-    "/exportones/count": {
+    "/businessresults/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "parameters": []
       }
     },
-    "/exportones/{id}": {
+    "/businessresults/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Businessresult"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Businessresult"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewBusinessresult"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Businessresult"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Exportone": {
+      "Businessresult": {
         "required": [
           "id"
         ],
@@ -525,57 +525,20 @@
           "idd": {
             "type": "integer"
           },
-          "size": {
-            "type": "number"
-          },
-          "usd": {
-            "type": "number"
-          },
-          "mnt": {
-            "type": "number"
+          "code": {
+            "type": "integer"
           },
           "desc": {
             "type": "string"
           },
-          "code": {
-            "type": "integer"
+          "year_one": {
+            "type": "number"
           },
-          "parent": {
-            "type": "string"
+          "year_two": {
+            "type": "number"
           },
-          "export_product": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "idd": {
-                "type": "integer"
-              },
-              "name": {
-                "type": "string"
-              },
-              "exporttwo": {
-                "type": "string"
-              },
-              "exportones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "year_three": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -583,31 +546,25 @@
           }
         }
       },
-      "NewExportone": {
+      "NewBusinessresult": {
         "properties": {
           "idd": {
             "type": "integer"
           },
-          "size": {
-            "type": "number"
-          },
-          "usd": {
-            "type": "number"
-          },
-          "mnt": {
-            "type": "number"
+          "code": {
+            "type": "integer"
           },
           "desc": {
             "type": "string"
           },
-          "code": {
-            "type": "integer"
+          "year_one": {
+            "type": "number"
           },
-          "parent": {
-            "type": "string"
+          "year_two": {
+            "type": "number"
           },
-          "export_product": {
-            "type": "string"
+          "year_three": {
+            "type": "number"
           },
           "published_at": {
             "type": "string",
@@ -625,7 +582,7 @@
   },
   "tags": [
     {
-      "name": "Exportone"
+      "name": "Businessresult"
     }
   ]
 }

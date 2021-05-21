@@ -531,6 +531,15 @@
           "seen": {
             "type": "boolean"
           },
+          "year_one": {
+            "type": "string"
+          },
+          "year_two": {
+            "type": "string"
+          },
+          "year_three": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -547,6 +556,15 @@
           },
           "seen": {
             "type": "boolean"
+          },
+          "year_one": {
+            "type": "string"
+          },
+          "year_two": {
+            "type": "string"
+          },
+          "year_three": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
