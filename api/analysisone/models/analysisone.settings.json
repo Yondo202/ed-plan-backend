@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "exportones",
+  "collectionName": "analysisones",
   "info": {
-    "name": "exportone",
+    "name": "analysisone",
     "description": ""
   },
   "options": {
@@ -15,27 +15,22 @@
     "idd": {
       "type": "biginteger"
     },
-    "size": {
-      "type": "float"
-    },
-    "usd": {
-      "type": "float"
-    },
-    "mnt": {
-      "type": "float"
-    },
-    "desc": {
-      "type": "string"
-    },
-    "code": {
-      "type": "biginteger"
-    },
     "parent": {
       "type": "string"
     },
-    "export_product": {
-      "via": "exportones",
-      "model": "export-product"
+    "analysisonedetails": {
+      "via": "analysisone",
+      "collection": "analysisonedetail"
+    },
+    "analysisonebody": {
+      "via": "analysisone",
+      "model": "analysisonebody"
+    },
+    "head_title": {
+      "type": "string"
+    },
+    "head_measure": {
+      "type": "string"
     }
   }
 }

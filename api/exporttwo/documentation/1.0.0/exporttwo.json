@@ -554,6 +554,21 @@
                   "type": "string"
                 }
               },
+              "price_usd": {
+                "type": "number"
+              },
+              "price_mnt": {
+                "type": "number"
+              },
+              "exportthrees": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "selected": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },

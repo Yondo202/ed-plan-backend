@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/analysisonedetails",
+      "handler": "analysisonedetail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisonedetails/count",
+      "handler": "analysisonedetail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisonedetails/:id",
+      "handler": "analysisonedetail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analysisonedetails",
+      "handler": "analysisonedetail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analysisonedetails/:id",
+      "handler": "analysisonedetail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analysisonedetails/:id",
+      "handler": "analysisonedetail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

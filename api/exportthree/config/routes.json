@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exportthrees",
+      "handler": "exportthree.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exportthrees/count",
+      "handler": "exportthree.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exportthrees/:id",
+      "handler": "exportthree.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exportthrees",
+      "handler": "exportthree.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exportthrees/:id",
+      "handler": "exportthree.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exportthrees/:id",
+      "handler": "exportthree.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

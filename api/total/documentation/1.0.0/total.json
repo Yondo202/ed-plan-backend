@@ -573,6 +573,9 @@
           "financeplan": {
             "type": "boolean"
           },
+          "analysisone": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -630,6 +633,9 @@
             "type": "boolean"
           },
           "financeplan": {
+            "type": "boolean"
+          },
+          "analysisone": {
             "type": "boolean"
           },
           "published_at": {

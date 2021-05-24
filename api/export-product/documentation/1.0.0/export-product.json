@@ -618,6 +618,61 @@
               }
             }
           },
+          "price_usd": {
+            "type": "number"
+          },
+          "price_mnt": {
+            "type": "number"
+          },
+          "exportthrees": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "idd": {
+                  "type": "integer"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "usd": {
+                  "type": "number"
+                },
+                "mnt": {
+                  "type": "number"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "integer"
+                },
+                "parent": {
+                  "type": "string"
+                },
+                "export_product": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "selected": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -640,6 +695,21 @@
             "items": {
               "type": "string"
             }
+          },
+          "price_usd": {
+            "type": "number"
+          },
+          "price_mnt": {
+            "type": "number"
+          },
+          "exportthrees": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "selected": {
+            "type": "boolean"
           },
           "published_at": {
             "type": "string",

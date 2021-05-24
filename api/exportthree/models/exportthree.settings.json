@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "exportones",
+  "collectionName": "exportthrees",
   "info": {
-    "name": "exportone",
-    "description": ""
+    "name": "exportthree"
   },
   "options": {
     "increments": true,
@@ -34,7 +33,7 @@
       "type": "string"
     },
     "export_product": {
-      "via": "exportones",
+      "via": "exportthrees",
       "model": "export-product"
     }
   }

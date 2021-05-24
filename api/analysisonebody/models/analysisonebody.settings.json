@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "exportones",
+  "collectionName": "analysisonebodies",
   "info": {
-    "name": "exportone",
+    "name": "analysisonebody",
     "description": ""
   },
   "options": {
@@ -12,30 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "body": {
+      "type": "richtext"
+    },
     "idd": {
       "type": "biginteger"
     },
-    "size": {
-      "type": "float"
-    },
-    "usd": {
-      "type": "float"
-    },
-    "mnt": {
-      "type": "float"
-    },
-    "desc": {
+    "source": {
       "type": "string"
-    },
-    "code": {
-      "type": "biginteger"
     },
     "parent": {
       "type": "string"
     },
-    "export_product": {
-      "via": "exportones",
-      "model": "export-product"
+    "analysisone": {
+      "via": "analysisonebody",
+      "model": "analysisone"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/exportones": {
+    "/exportthrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exportone"
+                    "$ref": "#/components/schemas/Exportthree"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Exportthree"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewExportthree"
               }
             }
           }
         }
       }
     },
-    "/exportones/count": {
+    "/exportthrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "parameters": []
       }
     },
-    "/exportones/{id}": {
+    "/exportthrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Exportthree"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Exportthree"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewExportthree"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Exportthree"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Exportone": {
+      "Exportthree": {
         "required": [
           "id"
         ],
@@ -598,7 +598,7 @@
           }
         }
       },
-      "NewExportone": {
+      "NewExportthree": {
         "properties": {
           "idd": {
             "type": "integer"
@@ -640,7 +640,7 @@
   },
   "tags": [
     {
-      "name": "Exportone"
+      "name": "Exportthree"
     }
   ]
 }

@@ -22,8 +22,8 @@
       "type": "string"
     },
     "export_product": {
-      "model": "export-product",
-      "via": "exporttwo"
+      "via": "exporttwo",
+      "model": "export-product"
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/exportones": {
+    "/analysisones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exportone"
+                    "$ref": "#/components/schemas/Analysisone"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Analysisone"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewAnalysisone"
               }
             }
           }
         }
       }
     },
-    "/exportones/count": {
+    "/analysisones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "parameters": []
       }
     },
-    "/exportones/{id}": {
+    "/analysisones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Analysisone"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exportone"
+                  "$ref": "#/components/schemas/Analysisone"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewExportone"
+                "$ref": "#/components/schemas/NewAnalysisone"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Exportone"
+          "Analysisone"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Exportone": {
+      "Analysisone": {
         "required": [
           "id"
         ],
@@ -525,25 +525,62 @@
           "idd": {
             "type": "integer"
           },
-          "size": {
-            "type": "number"
-          },
-          "usd": {
-            "type": "number"
-          },
-          "mnt": {
-            "type": "number"
-          },
-          "desc": {
-            "type": "string"
-          },
-          "code": {
-            "type": "integer"
-          },
           "parent": {
             "type": "string"
           },
-          "export_product": {
+          "analysisonedetails": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "analysisone": {
+                  "type": "string"
+                },
+                "idd": {
+                  "type": "integer"
+                },
+                "parent": {
+                  "type": "string"
+                },
+                "tarif": {
+                  "type": "string"
+                },
+                "standart": {
+                  "type": "string"
+                },
+                "measure_price": {
+                  "type": "string"
+                },
+                "measure": {
+                  "type": "string"
+                },
+                "price": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "analysisonebody": {
             "required": [
               "id"
             ],
@@ -551,35 +588,20 @@
               "id": {
                 "type": "string"
               },
+              "body": {
+                "type": "string"
+              },
               "idd": {
                 "type": "integer"
               },
-              "name": {
+              "source": {
                 "type": "string"
               },
-              "exporttwo": {
+              "parent": {
                 "type": "string"
               },
-              "exportones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "price_usd": {
-                "type": "number"
-              },
-              "price_mnt": {
-                "type": "number"
-              },
-              "exportthrees": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "selected": {
-                "type": "boolean"
+              "analysisone": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -592,36 +614,39 @@
               }
             }
           },
+          "head_title": {
+            "type": "string"
+          },
+          "head_measure": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewExportone": {
+      "NewAnalysisone": {
         "properties": {
           "idd": {
-            "type": "integer"
-          },
-          "size": {
-            "type": "number"
-          },
-          "usd": {
-            "type": "number"
-          },
-          "mnt": {
-            "type": "number"
-          },
-          "desc": {
-            "type": "string"
-          },
-          "code": {
             "type": "integer"
           },
           "parent": {
             "type": "string"
           },
-          "export_product": {
+          "analysisonedetails": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "analysisonebody": {
+            "type": "string"
+          },
+          "head_title": {
+            "type": "string"
+          },
+          "head_measure": {
             "type": "string"
           },
           "published_at": {
@@ -640,7 +665,7 @@
   },
   "tags": [
     {
-      "name": "Exportone"
+      "name": "Analysisone"
     }
   ]
 }

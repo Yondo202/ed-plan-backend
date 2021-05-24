@@ -62,6 +62,9 @@
     },
     "financeplan": {
       "type": "boolean"
+    },
+    "analysisone": {
+      "type": "boolean"
     }
   }
 }

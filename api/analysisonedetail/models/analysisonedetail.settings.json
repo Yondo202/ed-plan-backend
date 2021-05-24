@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysisonedetails",
+  "info": {
+    "name": "analysisonedetail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "desc": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "analysisone": {
+      "via": "analysisonedetails",
+      "model": "analysisone"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "tarif": {
+      "type": "string"
+    },
+    "standart": {
+      "type": "string"
+    },
+    "measure_price": {
+      "type": "string"
+    },
+    "measure": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    }
+  }
+}
