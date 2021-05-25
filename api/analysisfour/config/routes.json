@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/analysisfours",
+      "handler": "analysisfour.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfours/count",
+      "handler": "analysisfour.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfours/:id",
+      "handler": "analysisfour.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analysisfours",
+      "handler": "analysisfour.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analysisfours/:id",
+      "handler": "analysisfour.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analysisfours/:id",
+      "handler": "analysisfour.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

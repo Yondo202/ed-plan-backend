@@ -65,6 +65,15 @@
     },
     "analysisone": {
       "type": "boolean"
+    },
+    "analysistwo": {
+      "type": "boolean"
+    },
+    "analysisthree": {
+      "type": "boolean"
+    },
+    "analysisfour": {
+      "type": "boolean"
     }
   }
 }

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysisfours",
+  "info": {
+    "name": "analysisfour"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "parent": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

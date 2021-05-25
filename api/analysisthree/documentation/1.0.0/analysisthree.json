@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/totals": {
+    "/analysisthrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Total"
+                    "$ref": "#/components/schemas/Analysisthree"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysisthree"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewAnalysisthree"
               }
             }
           }
         }
       }
     },
-    "/totals/count": {
+    "/analysisthrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "parameters": []
       }
     },
-    "/totals/{id}": {
+    "/analysisthrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysisthree"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysisthree"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewAnalysisthree"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysisthree"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Total": {
+      "Analysisthree": {
         "required": [
           "id"
         ],
@@ -522,68 +522,14 @@
           "id": {
             "type": "string"
           },
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "body": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
-          },
-          "m_one": {
-            "type": "boolean"
-          },
-          "m_two": {
-            "type": "boolean"
-          },
-          "m_three": {
-            "type": "boolean"
-          },
-          "m_four": {
-            "type": "boolean"
-          },
-          "m_five": {
-            "type": "boolean"
-          },
-          "financeplan": {
-            "type": "boolean"
-          },
-          "analysisone": {
-            "type": "boolean"
-          },
-          "analysistwo": {
-            "type": "boolean"
-          },
-          "analysisthree": {
-            "type": "boolean"
-          },
-          "analysisfour": {
-            "type": "boolean"
+          "parent": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -591,70 +537,16 @@
           }
         }
       },
-      "NewTotal": {
+      "NewAnalysisthree": {
         "properties": {
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
+          "body": {
+            "type": "string"
           },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
-          },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
-          },
-          "infothree": {
-            "type": "boolean"
-          },
-          "businessone": {
-            "type": "boolean"
-          },
-          "busone": {
-            "type": "boolean"
-          },
-          "bustwo": {
-            "type": "boolean"
-          },
-          "exportone": {
-            "type": "boolean"
-          },
-          "exporttwo": {
-            "type": "boolean"
-          },
-          "m_one": {
-            "type": "boolean"
-          },
-          "m_two": {
-            "type": "boolean"
-          },
-          "m_three": {
-            "type": "boolean"
-          },
-          "m_four": {
-            "type": "boolean"
-          },
-          "m_five": {
-            "type": "boolean"
-          },
-          "financeplan": {
-            "type": "boolean"
-          },
-          "analysisone": {
-            "type": "boolean"
-          },
-          "analysistwo": {
-            "type": "boolean"
-          },
-          "analysisthree": {
-            "type": "boolean"
-          },
-          "analysisfour": {
-            "type": "boolean"
+          "parent": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -672,7 +564,7 @@
   },
   "tags": [
     {
-      "name": "Total"
+      "name": "Analysisthree"
     }
   ]
 }

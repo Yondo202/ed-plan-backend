@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/totals": {
+    "/analysistwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Total"
+                    "$ref": "#/components/schemas/Analysistwo"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysistwo"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewAnalysistwo"
               }
             }
           }
         }
       }
     },
-    "/totals/count": {
+    "/analysistwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "parameters": []
       }
     },
-    "/totals/{id}": {
+    "/analysistwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysistwo"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Total"
+                  "$ref": "#/components/schemas/Analysistwo"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTotal"
+                "$ref": "#/components/schemas/NewAnalysistwo"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Total"
+          "Analysistwo"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Total": {
+      "Analysistwo": {
         "required": [
           "id"
         ],
@@ -522,68 +522,59 @@
           "id": {
             "type": "string"
           },
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
-          },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
+          "parent": {
+            "type": "string"
           },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
+          "country": {
+            "type": "string"
           },
-          "infothree": {
-            "type": "boolean"
+          "price": {
+            "type": "integer"
           },
-          "businessone": {
-            "type": "boolean"
+          "standart": {
+            "type": "integer"
           },
-          "busone": {
-            "type": "boolean"
+          "tarif": {
+            "type": "integer"
           },
-          "bustwo": {
-            "type": "boolean"
+          "traffic_range": {
+            "type": "integer"
           },
-          "exportone": {
-            "type": "boolean"
+          "total": {
+            "type": "integer"
           },
-          "exporttwo": {
-            "type": "boolean"
+          "add1": {
+            "type": "integer"
           },
-          "m_one": {
-            "type": "boolean"
+          "add2": {
+            "type": "integer"
           },
-          "m_two": {
-            "type": "boolean"
+          "add3": {
+            "type": "integer"
           },
-          "m_three": {
-            "type": "boolean"
+          "add4": {
+            "type": "integer"
           },
-          "m_four": {
-            "type": "boolean"
+          "add5": {
+            "type": "integer"
           },
-          "m_five": {
-            "type": "boolean"
+          "head1": {
+            "type": "string"
           },
-          "financeplan": {
-            "type": "boolean"
+          "head2": {
+            "type": "string"
           },
-          "analysisone": {
-            "type": "boolean"
+          "head3": {
+            "type": "string"
           },
-          "analysistwo": {
-            "type": "boolean"
+          "head4": {
+            "type": "string"
           },
-          "analysisthree": {
-            "type": "boolean"
-          },
-          "analysisfour": {
-            "type": "boolean"
+          "head5": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -591,70 +582,61 @@
           }
         }
       },
-      "NewTotal": {
+      "NewAnalysistwo": {
         "properties": {
-          "projectinfo": {
-            "type": "boolean",
-            "default": false
-          },
           "idd": {
             "type": "integer"
           },
-          "infoone": {
-            "type": "boolean",
-            "default": false
+          "parent": {
+            "type": "string"
           },
-          "infotwo": {
-            "type": "boolean",
-            "default": false
+          "country": {
+            "type": "string"
           },
-          "infothree": {
-            "type": "boolean"
+          "price": {
+            "type": "integer"
           },
-          "businessone": {
-            "type": "boolean"
+          "standart": {
+            "type": "integer"
           },
-          "busone": {
-            "type": "boolean"
+          "tarif": {
+            "type": "integer"
           },
-          "bustwo": {
-            "type": "boolean"
+          "traffic_range": {
+            "type": "integer"
           },
-          "exportone": {
-            "type": "boolean"
+          "total": {
+            "type": "integer"
           },
-          "exporttwo": {
-            "type": "boolean"
+          "add1": {
+            "type": "integer"
           },
-          "m_one": {
-            "type": "boolean"
+          "add2": {
+            "type": "integer"
           },
-          "m_two": {
-            "type": "boolean"
+          "add3": {
+            "type": "integer"
           },
-          "m_three": {
-            "type": "boolean"
+          "add4": {
+            "type": "integer"
           },
-          "m_four": {
-            "type": "boolean"
+          "add5": {
+            "type": "integer"
           },
-          "m_five": {
-            "type": "boolean"
+          "head1": {
+            "type": "string"
           },
-          "financeplan": {
-            "type": "boolean"
+          "head2": {
+            "type": "string"
           },
-          "analysisone": {
-            "type": "boolean"
+          "head3": {
+            "type": "string"
           },
-          "analysistwo": {
-            "type": "boolean"
+          "head4": {
+            "type": "string"
           },
-          "analysisthree": {
-            "type": "boolean"
-          },
-          "analysisfour": {
-            "type": "boolean"
+          "head5": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -672,7 +654,7 @@
   },
   "tags": [
     {
-      "name": "Total"
+      "name": "Analysistwo"
     }
   ]
 }

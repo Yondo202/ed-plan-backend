@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysisthrees",
+  "info": {
+    "name": "analysisthree"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    }
+  }
+}
