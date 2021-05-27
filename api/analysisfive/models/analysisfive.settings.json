@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysisfives",
+  "info": {
+    "name": "analysisfive",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "year_one": {
+      "type": "float"
+    },
+    "year_two": {
+      "type": "float"
+    },
+    "year_three": {
+      "type": "float"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "code": {
+      "type": "biginteger"
+    }
+  }
+}

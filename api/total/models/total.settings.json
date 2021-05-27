@@ -74,6 +74,9 @@
     },
     "analysisfour": {
       "type": "boolean"
+    },
+    "analysisfive": {
+      "type": "boolean"
     }
   }
 }

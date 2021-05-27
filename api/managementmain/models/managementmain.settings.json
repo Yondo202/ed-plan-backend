@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "managementmains",
+  "info": {
+    "name": "managementmain",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "code": {
+      "type": "biginteger"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "managementdetails": {
+      "via": "managementmain",
+      "collection": "managementdetail"
+    }
+  }
+}

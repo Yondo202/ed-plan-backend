@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/analysistwos": {
+    "/managementdetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Analysistwo"
+                    "$ref": "#/components/schemas/Managementdetail"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Managementdetail"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnalysistwo"
+                "$ref": "#/components/schemas/NewManagementdetail"
               }
             }
           }
         }
       }
     },
-    "/analysistwos/count": {
+    "/managementdetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "parameters": []
       }
     },
-    "/analysistwos/{id}": {
+    "/managementdetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Managementdetail"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Managementdetail"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnalysistwo"
+                "$ref": "#/components/schemas/NewManagementdetail"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Managementdetail"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Analysistwo": {
+      "Managementdetail": {
         "required": [
           "id"
         ],
@@ -528,59 +528,69 @@
           "parent": {
             "type": "string"
           },
-          "country": {
+          "desc": {
             "type": "string"
           },
-          "price": {
-            "type": "integer"
-          },
-          "standart": {
-            "type": "integer"
-          },
-          "tarif": {
-            "type": "integer"
-          },
-          "traffic_range": {
-            "type": "integer"
-          },
-          "total": {
-            "type": "integer"
-          },
-          "add1": {
-            "type": "integer"
-          },
-          "add2": {
-            "type": "integer"
-          },
-          "add3": {
-            "type": "integer"
-          },
-          "add4": {
-            "type": "integer"
-          },
-          "add5": {
-            "type": "integer"
-          },
-          "head1": {
+          "activity_category": {
             "type": "string"
           },
-          "head2": {
+          "end_date": {
             "type": "string"
           },
-          "head3": {
+          "start_date": {
             "type": "string"
           },
-          "head4": {
+          "budget_cost": {
+            "type": "number"
+          },
+          "want_amount": {
+            "type": "number"
+          },
+          "want_finance": {
+            "type": "number"
+          },
+          "responsible_person": {
             "type": "string"
           },
-          "head5": {
+          "workreport_date": {
             "type": "string"
           },
-          "target": {
-            "type": "boolean"
-          },
-          "code": {
-            "type": "integer"
+          "managementmain": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "parent": {
+                "type": "string"
+              },
+              "code": {
+                "type": "integer"
+              },
+              "body": {
+                "type": "string"
+              },
+              "managementdetails": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -588,7 +598,7 @@
           }
         }
       },
-      "NewAnalysistwo": {
+      "NewManagementdetail": {
         "properties": {
           "idd": {
             "type": "integer"
@@ -596,59 +606,35 @@
           "parent": {
             "type": "string"
           },
-          "country": {
+          "desc": {
             "type": "string"
           },
-          "price": {
-            "type": "integer"
-          },
-          "standart": {
-            "type": "integer"
-          },
-          "tarif": {
-            "type": "integer"
-          },
-          "traffic_range": {
-            "type": "integer"
-          },
-          "total": {
-            "type": "integer"
-          },
-          "add1": {
-            "type": "integer"
-          },
-          "add2": {
-            "type": "integer"
-          },
-          "add3": {
-            "type": "integer"
-          },
-          "add4": {
-            "type": "integer"
-          },
-          "add5": {
-            "type": "integer"
-          },
-          "head1": {
+          "activity_category": {
             "type": "string"
           },
-          "head2": {
+          "end_date": {
             "type": "string"
           },
-          "head3": {
+          "start_date": {
             "type": "string"
           },
-          "head4": {
+          "budget_cost": {
+            "type": "number"
+          },
+          "want_amount": {
+            "type": "number"
+          },
+          "want_finance": {
+            "type": "number"
+          },
+          "responsible_person": {
             "type": "string"
           },
-          "head5": {
+          "workreport_date": {
             "type": "string"
           },
-          "target": {
-            "type": "boolean"
-          },
-          "code": {
-            "type": "integer"
+          "managementmain": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -666,7 +652,7 @@
   },
   "tags": [
     {
-      "name": "Analysistwo"
+      "name": "Managementdetail"
     }
   ]
 }

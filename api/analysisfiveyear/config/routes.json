@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/analysisfiveyears",
+      "handler": "analysisfiveyear.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfiveyears/count",
+      "handler": "analysisfiveyear.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfiveyears/:id",
+      "handler": "analysisfiveyear.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analysisfiveyears",
+      "handler": "analysisfiveyear.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analysisfiveyears/:id",
+      "handler": "analysisfiveyear.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analysisfiveyears/:id",
+      "handler": "analysisfiveyear.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

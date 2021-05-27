@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/analysisfives",
+      "handler": "analysisfive.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfives/count",
+      "handler": "analysisfive.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysisfives/:id",
+      "handler": "analysisfive.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analysisfives",
+      "handler": "analysisfive.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analysisfives/:id",
+      "handler": "analysisfive.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analysisfives/:id",
+      "handler": "analysisfive.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

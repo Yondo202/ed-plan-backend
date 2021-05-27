@@ -585,6 +585,9 @@
           "analysisfour": {
             "type": "boolean"
           },
+          "analysisfive": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -654,6 +657,9 @@
             "type": "boolean"
           },
           "analysisfour": {
+            "type": "boolean"
+          },
+          "analysisfive": {
             "type": "boolean"
           },
           "published_at": {

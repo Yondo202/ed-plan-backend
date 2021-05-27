@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysisfiveyears",
+  "info": {
+    "name": "analysisfiveyear",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year_one": {
+      "type": "string"
+    },
+    "year_two": {
+      "type": "string"
+    },
+    "year_three": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "managementdetails",
+  "info": {
+    "name": "Managementdetail",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "parent": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "activity_category": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "budget_cost": {
+      "type": "decimal"
+    },
+    "want_amount": {
+      "type": "decimal"
+    },
+    "want_finance": {
+      "type": "decimal"
+    },
+    "responsible_person": {
+      "type": "string"
+    },
+    "workreport_date": {
+      "type": "string"
+    },
+    "managementmain": {
+      "model": "managementmain",
+      "via": "managementdetails"
+    }
+  }
+}

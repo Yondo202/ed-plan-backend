@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/analysistwos": {
+    "/analysisfiveyears": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Analysistwo"
+                    "$ref": "#/components/schemas/Analysisfiveyear"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Analysisfiveyear"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnalysistwo"
+                "$ref": "#/components/schemas/NewAnalysisfiveyear"
               }
             }
           }
         }
       }
     },
-    "/analysistwos/count": {
+    "/analysisfiveyears/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "parameters": []
       }
     },
-    "/analysistwos/{id}": {
+    "/analysisfiveyears/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Analysisfiveyear"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Analysistwo"
+                  "$ref": "#/components/schemas/Analysisfiveyear"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAnalysistwo"
+                "$ref": "#/components/schemas/NewAnalysisfiveyear"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Analysistwo"
+          "Analysisfiveyear"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Analysistwo": {
+      "Analysisfiveyear": {
         "required": [
           "id"
         ],
@@ -522,65 +522,20 @@
           "id": {
             "type": "string"
           },
+          "year_one": {
+            "type": "string"
+          },
+          "year_two": {
+            "type": "string"
+          },
+          "year_three": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
           "parent": {
             "type": "string"
-          },
-          "country": {
-            "type": "string"
-          },
-          "price": {
-            "type": "integer"
-          },
-          "standart": {
-            "type": "integer"
-          },
-          "tarif": {
-            "type": "integer"
-          },
-          "traffic_range": {
-            "type": "integer"
-          },
-          "total": {
-            "type": "integer"
-          },
-          "add1": {
-            "type": "integer"
-          },
-          "add2": {
-            "type": "integer"
-          },
-          "add3": {
-            "type": "integer"
-          },
-          "add4": {
-            "type": "integer"
-          },
-          "add5": {
-            "type": "integer"
-          },
-          "head1": {
-            "type": "string"
-          },
-          "head2": {
-            "type": "string"
-          },
-          "head3": {
-            "type": "string"
-          },
-          "head4": {
-            "type": "string"
-          },
-          "head5": {
-            "type": "string"
-          },
-          "target": {
-            "type": "boolean"
-          },
-          "code": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -588,67 +543,22 @@
           }
         }
       },
-      "NewAnalysistwo": {
+      "NewAnalysisfiveyear": {
         "properties": {
+          "year_one": {
+            "type": "string"
+          },
+          "year_two": {
+            "type": "string"
+          },
+          "year_three": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
           "parent": {
             "type": "string"
-          },
-          "country": {
-            "type": "string"
-          },
-          "price": {
-            "type": "integer"
-          },
-          "standart": {
-            "type": "integer"
-          },
-          "tarif": {
-            "type": "integer"
-          },
-          "traffic_range": {
-            "type": "integer"
-          },
-          "total": {
-            "type": "integer"
-          },
-          "add1": {
-            "type": "integer"
-          },
-          "add2": {
-            "type": "integer"
-          },
-          "add3": {
-            "type": "integer"
-          },
-          "add4": {
-            "type": "integer"
-          },
-          "add5": {
-            "type": "integer"
-          },
-          "head1": {
-            "type": "string"
-          },
-          "head2": {
-            "type": "string"
-          },
-          "head3": {
-            "type": "string"
-          },
-          "head4": {
-            "type": "string"
-          },
-          "head5": {
-            "type": "string"
-          },
-          "target": {
-            "type": "boolean"
-          },
-          "code": {
-            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -666,7 +576,7 @@
   },
   "tags": [
     {
-      "name": "Analysistwo"
+      "name": "Analysisfiveyear"
     }
   ]
 }

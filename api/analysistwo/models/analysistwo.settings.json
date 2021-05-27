@@ -65,6 +65,12 @@
     },
     "head5": {
       "type": "string"
+    },
+    "target": {
+      "type": "boolean"
+    },
+    "code": {
+      "type": "biginteger"
     }
   }
 }
