@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/managementmains": {
+    "/productcountrys": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the productcountrys's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve productcountrys document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Managementmain"
+                    "$ref": "#/components/schemas/Productcountrys"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new productcountrys record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve productcountrys document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Managementmain"
+                  "$ref": "#/components/schemas/Productcountrys"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewManagementmain"
+                "$ref": "#/components/schemas/NewProductcountrys"
               }
             }
           }
         }
       }
     },
-    "/managementmains/count": {
+    "/productcountrys/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of productcountrys documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve productcountrys document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "parameters": []
       }
     },
-    "/managementmains/{id}": {
+    "/productcountrys/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one productcountrys record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve productcountrys document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Managementmain"
+                  "$ref": "#/components/schemas/Productcountrys"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single productcountrys record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve productcountrys document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Managementmain"
+                  "$ref": "#/components/schemas/Productcountrys"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewManagementmain"
+                "$ref": "#/components/schemas/NewProductcountrys"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single productcountrys record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single productcountrys based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Managementmain"
+          "Productcountrys"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Managementmain": {
+      "Productcountrys": {
         "required": [
           "id"
         ],
@@ -522,78 +522,20 @@
           "id": {
             "type": "string"
           },
+          "product_name": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
-          "parent": {
+          "product_id": {
             "type": "string"
           },
-          "code": {
-            "type": "integer"
-          },
-          "body": {
+          "country_name": {
             "type": "string"
           },
-          "managementdetails": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "idd": {
-                  "type": "integer"
-                },
-                "parent": {
-                  "type": "string"
-                },
-                "desc": {
-                  "type": "string"
-                },
-                "activity_category": {
-                  "type": "string"
-                },
-                "end_date": {
-                  "type": "string"
-                },
-                "start_date": {
-                  "type": "string"
-                },
-                "budget_cost": {
-                  "type": "number"
-                },
-                "want_amount": {
-                  "type": "number"
-                },
-                "want_finance": {
-                  "type": "number"
-                },
-                "responsible_person": {
-                  "type": "string"
-                },
-                "workreport_date": {
-                  "type": "string"
-                },
-                "managementmain": {
-                  "type": "string"
-                },
-                "code": {
-                  "type": "integer"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "country_id": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -601,25 +543,22 @@
           }
         }
       },
-      "NewManagementmain": {
+      "NewProductcountrys": {
         "properties": {
+          "product_name": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
-          "parent": {
+          "product_id": {
             "type": "string"
           },
-          "code": {
-            "type": "integer"
-          },
-          "body": {
+          "country_name": {
             "type": "string"
           },
-          "managementdetails": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "country_id": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -637,7 +576,7 @@
   },
   "tags": [
     {
-      "name": "Managementmain"
+      "name": "Productcountrys"
     }
   ]
 }

@@ -588,6 +588,9 @@
           "analysisfive": {
             "type": "boolean"
           },
+          "totalreport": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -660,6 +663,9 @@
             "type": "boolean"
           },
           "analysisfive": {
+            "type": "boolean"
+          },
+          "totalreport": {
             "type": "boolean"
           },
           "published_at": {

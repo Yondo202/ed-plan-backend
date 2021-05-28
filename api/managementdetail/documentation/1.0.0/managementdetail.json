@@ -592,6 +592,9 @@
               }
             }
           },
+          "code": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -635,6 +638,9 @@
           },
           "managementmain": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

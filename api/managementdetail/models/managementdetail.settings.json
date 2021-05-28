@@ -48,6 +48,9 @@
     "managementmain": {
       "model": "managementmain",
       "via": "managementdetails"
+    },
+    "code": {
+      "type": "biginteger"
     }
   }
 }

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productcountrys",
+  "info": {
+    "name": "productcountrys"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "country_name": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": "string"
+    }
+  }
+}

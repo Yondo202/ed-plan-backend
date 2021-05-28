@@ -77,6 +77,9 @@
     },
     "analysisfive": {
       "type": "boolean"
+    },
+    "totalreport": {
+      "type": "boolean"
     }
   }
 }
