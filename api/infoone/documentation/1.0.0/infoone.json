@@ -528,6 +528,49 @@
           "idd": {
             "type": "integer"
           },
+          "edpuploads": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "idd": {
+                  "type": "integer"
+                },
+                "file_id": {
+                  "type": "integer"
+                },
+                "infoone": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "infotwo": {
+                  "type": "string"
+                },
+                "infothreefile": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -541,6 +584,12 @@
           },
           "idd": {
             "type": "integer"
+          },
+          "edpuploads": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

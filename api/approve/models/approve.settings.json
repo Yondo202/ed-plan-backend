@@ -29,6 +29,9 @@
     },
     "year_three": {
       "type": "string"
+    },
+    "token": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "edpuploads",
+  "info": {
+    "name": "edpupload",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "idd": {
+      "type": "biginteger"
+    },
+    "file_id": {
+      "type": "biginteger"
+    },
+    "infoone": {
+      "model": "infoone",
+      "via": "edpuploads"
+    },
+    "name": {
+      "type": "string"
+    },
+    "infotwo": {
+      "model": "infotwo",
+      "via": "edpuploads"
+    },
+    "infothreefile": {
+      "via": "edpuploads",
+      "model": "infothreefiles"
+    }
+  }
+}

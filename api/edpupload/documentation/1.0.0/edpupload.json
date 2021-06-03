@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/infotwos": {
+    "/edpuploads": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Infotwo"
+                    "$ref": "#/components/schemas/Edpupload"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Edpupload"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewEdpupload"
               }
             }
           }
         }
       }
     },
-    "/infotwos/count": {
+    "/edpuploads/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/edpuploads/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Edpupload"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Edpupload"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewEdpupload"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Edpupload"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Infotwo": {
+      "Edpupload": {
         "required": [
           "id"
         ],
@@ -522,71 +522,123 @@
           "id": {
             "type": "string"
           },
+          "url": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
-          "register": {
+          "file_id": {
             "type": "integer"
           },
-          "comp_name": {
-            "type": "string"
-          },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
-          },
-          "edpuploads": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "idd": {
-                  "type": "integer"
-                },
-                "file_id": {
-                  "type": "integer"
-                },
-                "infoone": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "infotwo": {
-                  "type": "string"
-                },
-                "infothreefile": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "infoone": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "edpuploads": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "name": {
+            "type": "string"
+          },
+          "infotwo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "register": {
+                "type": "integer"
+              },
+              "comp_name": {
+                "type": "string"
+              },
+              "approve_date": {
+                "type": "string"
+              },
+              "sort": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "count": {
+                "type": "integer"
+              },
+              "address": {
+                "type": "string"
+              },
+              "edpuploads": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "infothreefile": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "edpuploads": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -596,38 +648,28 @@
           }
         }
       },
-      "NewInfotwo": {
+      "NewEdpupload": {
         "properties": {
+          "url": {
+            "type": "string"
+          },
           "idd": {
             "type": "integer"
           },
-          "register": {
+          "file_id": {
             "type": "integer"
           },
-          "comp_name": {
+          "infoone": {
             "type": "string"
           },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
+          "name": {
             "type": "string"
           },
-          "type": {
+          "infotwo": {
             "type": "string"
           },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
+          "infothreefile": {
             "type": "string"
-          },
-          "edpuploads": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -645,7 +687,7 @@
   },
   "tags": [
     {
-      "name": "Infotwo"
+      "name": "Edpupload"
     }
   ]
 }

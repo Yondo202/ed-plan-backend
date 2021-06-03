@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/infotwos": {
+    "/infothreefiles": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the infothreefiles's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve infothreefiles document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Infotwo"
+                    "$ref": "#/components/schemas/Infothreefiles"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new infothreefiles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve infothreefiles document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Infothreefiles"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewInfothreefiles"
               }
             }
           }
         }
       }
     },
-    "/infotwos/count": {
+    "/infothreefiles/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of infothreefiles documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve infothreefiles document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/infothreefiles/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one infothreefiles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve infothreefiles document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Infothreefiles"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single infothreefiles record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve infothreefiles document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Infothreefiles"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewInfothreefiles"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single infothreefiles record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single infothreefiles based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Infothreefiles"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Infotwo": {
+      "Infothreefiles": {
         "required": [
           "id"
         ],
@@ -524,28 +524,6 @@
           },
           "idd": {
             "type": "integer"
-          },
-          "register": {
-            "type": "integer"
-          },
-          "comp_name": {
-            "type": "string"
-          },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
           },
           "edpuploads": {
             "type": "array",
@@ -596,32 +574,10 @@
           }
         }
       },
-      "NewInfotwo": {
+      "NewInfothreefiles": {
         "properties": {
           "idd": {
             "type": "integer"
-          },
-          "register": {
-            "type": "integer"
-          },
-          "comp_name": {
-            "type": "string"
-          },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
           },
           "edpuploads": {
             "type": "array",
@@ -645,7 +601,7 @@
   },
   "tags": [
     {
-      "name": "Infotwo"
+      "name": "Infothreefiles"
     }
   ]
 }

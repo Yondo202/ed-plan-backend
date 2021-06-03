@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/infotwos": {
+    "/firstpages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Infotwo"
+                    "$ref": "#/components/schemas/Firstpage"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpage"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewFirstpage"
               }
             }
           }
         }
       }
     },
-    "/infotwos/count": {
+    "/firstpages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/firstpages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpage"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpage"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewFirstpage"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpage"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Infotwo": {
+      "Firstpage": {
         "required": [
           "id"
         ],
@@ -525,29 +525,29 @@
           "idd": {
             "type": "integer"
           },
-          "register": {
+          "logo_url": {
+            "type": "string"
+          },
+          "logo_id": {
             "type": "integer"
           },
           "comp_name": {
             "type": "string"
           },
-          "approve_date": {
+          "product_name": {
+            "type": "string"
+          },
+          "product_code": {
+            "type": "string"
+          },
+          "target_country": {
+            "type": "string"
+          },
+          "date": {
             "type": "string",
             "format": "date"
           },
-          "sort": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
-          },
-          "edpuploads": {
+          "firstpageimages": {
             "type": "array",
             "items": {
               "required": [
@@ -557,25 +557,16 @@
                 "id": {
                   "type": "string"
                 },
-                "url": {
-                  "type": "string"
-                },
                 "idd": {
                   "type": "integer"
                 },
-                "file_id": {
-                  "type": "integer"
-                },
-                "infoone": {
+                "image_url": {
                   "type": "string"
                 },
-                "name": {
+                "image_id": {
                   "type": "string"
                 },
-                "infotwo": {
-                  "type": "string"
-                },
-                "infothreefile": {
+                "firstpage": {
                   "type": "string"
                 },
                 "published_at": {
@@ -596,34 +587,34 @@
           }
         }
       },
-      "NewInfotwo": {
+      "NewFirstpage": {
         "properties": {
           "idd": {
             "type": "integer"
           },
-          "register": {
+          "logo_url": {
+            "type": "string"
+          },
+          "logo_id": {
             "type": "integer"
           },
           "comp_name": {
             "type": "string"
           },
-          "approve_date": {
+          "product_name": {
+            "type": "string"
+          },
+          "product_code": {
+            "type": "string"
+          },
+          "target_country": {
+            "type": "string"
+          },
+          "date": {
             "type": "string",
             "format": "date"
           },
-          "sort": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
-          },
-          "edpuploads": {
+          "firstpageimages": {
             "type": "array",
             "items": {
               "type": "string"
@@ -645,7 +636,7 @@
   },
   "tags": [
     {
-      "name": "Infotwo"
+      "name": "Firstpage"
     }
   ]
 }

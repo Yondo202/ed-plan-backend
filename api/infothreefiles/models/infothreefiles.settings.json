@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "infoones",
+  "collectionName": "infothreefiles",
   "info": {
-    "name": "infoone"
+    "name": "infothreefiles"
   },
   "options": {
     "increments": true,
@@ -11,14 +11,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "body": {
-      "type": "text"
-    },
     "idd": {
       "type": "biginteger"
     },
     "edpuploads": {
-      "via": "infoone",
+      "via": "infothreefile",
       "collection": "edpupload"
     }
   }

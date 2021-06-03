@@ -540,6 +540,9 @@
           "year_three": {
             "type": "string"
           },
+          "token": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -564,6 +567,9 @@
             "type": "string"
           },
           "year_three": {
+            "type": "string"
+          },
+          "token": {
             "type": "string"
           },
           "published_at": {

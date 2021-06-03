@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/edpuploads",
+      "handler": "edpupload.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/edpuploads/count",
+      "handler": "edpupload.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/edpuploads/:id",
+      "handler": "edpupload.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/edpuploads",
+      "handler": "edpupload.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/edpuploads/:id",
+      "handler": "edpupload.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/edpuploads/:id",
+      "handler": "edpupload.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

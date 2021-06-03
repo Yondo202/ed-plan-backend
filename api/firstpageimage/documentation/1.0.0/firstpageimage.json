@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/infotwos": {
+    "/firstpageimages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Infotwo"
+                    "$ref": "#/components/schemas/Firstpageimage"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpageimage"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewFirstpageimage"
               }
             }
           }
         }
       }
     },
-    "/infotwos/count": {
+    "/firstpageimages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/firstpageimages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpageimage"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Infotwo"
+                  "$ref": "#/components/schemas/Firstpageimage"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInfotwo"
+                "$ref": "#/components/schemas/NewFirstpageimage"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Infotwo"
+          "Firstpageimage"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Infotwo": {
+      "Firstpageimage": {
         "required": [
           "id"
         ],
@@ -525,68 +525,58 @@
           "idd": {
             "type": "integer"
           },
-          "register": {
-            "type": "integer"
-          },
-          "comp_name": {
+          "image_url": {
             "type": "string"
           },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
+          "image_id": {
             "type": "string"
           },
-          "type": {
-            "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
-          },
-          "edpuploads": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "idd": {
-                  "type": "integer"
-                },
-                "file_id": {
-                  "type": "integer"
-                },
-                "infoone": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "infotwo": {
-                  "type": "string"
-                },
-                "infothreefile": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "firstpage": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "idd": {
+                "type": "integer"
+              },
+              "logo_url": {
+                "type": "string"
+              },
+              "logo_id": {
+                "type": "integer"
+              },
+              "comp_name": {
+                "type": "string"
+              },
+              "product_name": {
+                "type": "string"
+              },
+              "product_code": {
+                "type": "string"
+              },
+              "target_country": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              },
+              "firstpageimages": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -596,38 +586,19 @@
           }
         }
       },
-      "NewInfotwo": {
+      "NewFirstpageimage": {
         "properties": {
           "idd": {
             "type": "integer"
           },
-          "register": {
-            "type": "integer"
-          },
-          "comp_name": {
+          "image_url": {
             "type": "string"
           },
-          "approve_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "sort": {
+          "image_id": {
             "type": "string"
           },
-          "type": {
+          "firstpage": {
             "type": "string"
-          },
-          "count": {
-            "type": "integer"
-          },
-          "address": {
-            "type": "string"
-          },
-          "edpuploads": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -645,7 +616,7 @@
   },
   "tags": [
     {
-      "name": "Infotwo"
+      "name": "Firstpageimage"
     }
   ]
 }

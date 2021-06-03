@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "infoones",
+  "collectionName": "firstpageimages",
   "info": {
-    "name": "infoone"
+    "name": "firstpageimage"
   },
   "options": {
     "increments": true,
@@ -11,15 +11,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "body": {
-      "type": "text"
-    },
     "idd": {
       "type": "biginteger"
     },
-    "edpuploads": {
-      "via": "infoone",
-      "collection": "edpupload"
+    "image_url": {
+      "type": "string"
+    },
+    "image_id": {
+      "type": "string"
+    },
+    "firstpage": {
+      "model": "firstpage",
+      "via": "firstpageimages"
     }
   }
 }

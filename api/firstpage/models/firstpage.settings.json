@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "infotwos",
+  "collectionName": "firstpages",
   "info": {
-    "name": "infotwo",
-    "description": ""
+    "name": "firstpage"
   },
   "options": {
     "increments": true,
@@ -15,30 +14,30 @@
     "idd": {
       "type": "biginteger"
     },
-    "register": {
+    "logo_url": {
+      "type": "string"
+    },
+    "logo_id": {
       "type": "biginteger"
     },
     "comp_name": {
       "type": "string"
     },
-    "approve_date": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string"
+    },
+    "target_country": {
+      "type": "string"
+    },
+    "date": {
       "type": "date"
     },
-    "sort": {
-      "type": "string"
-    },
-    "type": {
-      "type": "string"
-    },
-    "count": {
-      "type": "biginteger"
-    },
-    "address": {
-      "type": "string"
-    },
-    "edpuploads": {
-      "via": "infotwo",
-      "collection": "edpupload"
+    "firstpageimages": {
+      "via": "firstpage",
+      "collection": "firstpageimage"
     }
   }
 }
