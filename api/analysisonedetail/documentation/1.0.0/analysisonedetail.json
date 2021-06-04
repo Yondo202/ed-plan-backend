@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/analysisonedetails": {
+    "/pimis-edplan/analysisonedetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/analysisonedetails/count": {
+    "/pimis-edplan/analysisonedetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/analysisonedetails/{id}": {
+    "/pimis-edplan/analysisonedetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

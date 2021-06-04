@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/infothreefiles": {
+    "/pimis-edplan/infothreefiles": {
       "get": {
         "deprecated": false,
-        "description": "Find all the infothreefiles's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -194,10 +194,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new infothreefiles record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -254,13 +254,13 @@
         }
       }
     },
-    "/infothreefiles/count": {
+    "/pimis-edplan/infothreefiles/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of infothreefiles documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -311,13 +311,13 @@
         "parameters": []
       }
     },
-    "/infothreefiles/{id}": {
+    "/pimis-edplan/infothreefiles/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one infothreefiles record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -376,10 +376,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single infothreefiles record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single infothreefiles record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single infothreefiles based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {

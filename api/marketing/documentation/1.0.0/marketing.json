@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/marketings": {
+    "/pimis-edplan/marketings": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/marketings/count": {
+    "/pimis-edplan/marketings/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/marketings/{id}": {
+    "/pimis-edplan/marketings/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

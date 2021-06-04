@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/finance-plans",
+      "path": "/pimis-edplan/finance-plans",
       "handler": "finance-plan.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/finance-plans/count",
+      "path": "/pimis-edplan/finance-plans/count",
       "handler": "finance-plan.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/finance-plans/:id",
+      "path": "/pimis-edplan/finance-plans/:id",
       "handler": "finance-plan.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/finance-plans",
+      "path": "/pimis-edplan/finance-plans",
       "handler": "finance-plan.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/finance-plans/:id",
+      "path": "/pimis-edplan/finance-plans/:id",
       "handler": "finance-plan.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/finance-plans/:id",
+      "path": "/pimis-edplan/finance-plans/:id",
       "handler": "finance-plan.delete",
       "config": {
         "policies": []

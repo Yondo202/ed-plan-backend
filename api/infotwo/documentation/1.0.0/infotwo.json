@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/infotwos": {
+    "/pimis-edplan/infotwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/infotwos/count": {
+    "/pimis-edplan/infotwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/pimis-edplan/infotwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

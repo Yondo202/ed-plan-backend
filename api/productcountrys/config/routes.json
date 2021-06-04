@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/productcountrys",
+      "path": "/pimis-edplan/productcountrys",
       "handler": "productcountrys.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/productcountrys/count",
+      "path": "/pimis-edplan/productcountrys/count",
       "handler": "productcountrys.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/productcountrys/:id",
+      "path": "/pimis-edplan/productcountrys/:id",
       "handler": "productcountrys.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/productcountrys",
+      "path": "/pimis-edplan/productcountrys",
       "handler": "productcountrys.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/productcountrys/:id",
+      "path": "/pimis-edplan/productcountrys/:id",
       "handler": "productcountrys.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/productcountrys/:id",
+      "path": "/pimis-edplan/productcountrys/:id",
       "handler": "productcountrys.delete",
       "config": {
         "policies": []

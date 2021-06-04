@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/edpuploads": {
+    "/pimis-edplan/edpuploads": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/edpuploads/count": {
+    "/pimis-edplan/edpuploads/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/edpuploads/{id}": {
+    "/pimis-edplan/edpuploads/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

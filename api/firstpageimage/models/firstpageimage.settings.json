@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "firstpageimages",
   "info": {
-    "name": "firstpageimage"
+    "name": "firstpageimage",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -17,12 +18,12 @@
     "image_url": {
       "type": "string"
     },
-    "image_id": {
-      "type": "string"
-    },
     "firstpage": {
       "model": "firstpage",
       "via": "firstpageimages"
+    },
+    "image_id": {
+      "type": "biginteger"
     }
   }
 }

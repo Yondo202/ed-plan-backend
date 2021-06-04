@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/analysisthrees",
+      "path": "/pimis-edplan/analysisthrees",
       "handler": "analysisthree.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisthrees/count",
+      "path": "/pimis-edplan/analysisthrees/count",
       "handler": "analysisthree.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisthrees/:id",
+      "path": "/pimis-edplan/analysisthrees/:id",
       "handler": "analysisthree.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/analysisthrees",
+      "path": "/pimis-edplan/analysisthrees",
       "handler": "analysisthree.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/analysisthrees/:id",
+      "path": "/pimis-edplan/analysisthrees/:id",
       "handler": "analysisthree.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/analysisthrees/:id",
+      "path": "/pimis-edplan/analysisthrees/:id",
       "handler": "analysisthree.delete",
       "config": {
         "policies": []

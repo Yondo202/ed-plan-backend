@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/infotwodetails",
+      "path": "/pimis-edplan/infotwodetails",
       "handler": "infotwodetail.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/infotwodetails/count",
+      "path": "/pimis-edplan/infotwodetails/count",
       "handler": "infotwodetail.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/infotwodetails/:id",
+      "path": "/pimis-edplan/infotwodetails/:id",
       "handler": "infotwodetail.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/infotwodetails",
+      "path": "/pimis-edplan/infotwodetails",
       "handler": "infotwodetail.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/infotwodetails/:id",
+      "path": "/pimis-edplan/infotwodetails/:id",
       "handler": "infotwodetail.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/infotwodetails/:id",
+      "path": "/pimis-edplan/infotwodetails/:id",
       "handler": "infotwodetail.delete",
       "config": {
         "policies": []

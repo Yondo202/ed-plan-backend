@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/businessinfoones": {
+    "/pimis-edplan/businessinfoones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/businessinfoones/count": {
+    "/pimis-edplan/businessinfoones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/businessinfoones/{id}": {
+    "/pimis-edplan/businessinfoones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

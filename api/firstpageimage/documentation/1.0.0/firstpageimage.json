@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/firstpageimages": {
+    "/pimis-edplan/firstpageimages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/firstpageimages/count": {
+    "/pimis-edplan/firstpageimages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/firstpageimages/{id}": {
+    "/pimis-edplan/firstpageimages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -528,9 +528,6 @@
           "image_url": {
             "type": "string"
           },
-          "image_id": {
-            "type": "string"
-          },
           "firstpage": {
             "required": [
               "id"
@@ -580,6 +577,9 @@
               }
             }
           },
+          "image_id": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -594,11 +594,11 @@
           "image_url": {
             "type": "string"
           },
-          "image_id": {
-            "type": "string"
-          },
           "firstpage": {
             "type": "string"
+          },
+          "image_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

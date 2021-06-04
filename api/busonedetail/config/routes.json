@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/busonedetails",
+      "path": "/pimis-edplan/busonedetails",
       "handler": "busonedetail.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/busonedetails/count",
+      "path": "/pimis-edplan/busonedetails/count",
       "handler": "busonedetail.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/busonedetails/:id",
+      "path": "/pimis-edplan/busonedetails/:id",
       "handler": "busonedetail.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/busonedetails",
+      "path": "/pimis-edplan/busonedetails",
       "handler": "busonedetail.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/busonedetails/:id",
+      "path": "/pimis-edplan/busonedetails/:id",
       "handler": "busonedetail.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/busonedetails/:id",
+      "path": "/pimis-edplan/busonedetails/:id",
       "handler": "busonedetail.delete",
       "config": {
         "policies": []

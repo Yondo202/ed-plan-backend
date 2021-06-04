@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/exportthrees",
+      "path": "/pimis-edplan/exportthrees",
       "handler": "exportthree.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/exportthrees/count",
+      "path": "/pimis-edplan/exportthrees/count",
       "handler": "exportthree.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/exportthrees/:id",
+      "path": "/pimis-edplan/exportthrees/:id",
       "handler": "exportthree.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/exportthrees",
+      "path": "/pimis-edplan/exportthrees",
       "handler": "exportthree.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/exportthrees/:id",
+      "path": "/pimis-edplan/exportthrees/:id",
       "handler": "exportthree.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/exportthrees/:id",
+      "path": "/pimis-edplan/exportthrees/:id",
       "handler": "exportthree.delete",
       "config": {
         "policies": []

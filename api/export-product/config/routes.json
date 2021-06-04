@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/export-products",
+      "path": "/pimis-edplan/export-products",
       "handler": "export-product.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/export-products/count",
+      "path": "/pimis-edplan/export-products/count",
       "handler": "export-product.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/export-products/:id",
+      "path": "/pimis-edplan/export-products/:id",
       "handler": "export-product.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/export-products",
+      "path": "/pimis-edplan/export-products",
       "handler": "export-product.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/export-products/:id",
+      "path": "/pimis-edplan/export-products/:id",
       "handler": "export-product.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/export-products/:id",
+      "path": "/pimis-edplan/export-products/:id",
       "handler": "export-product.delete",
       "config": {
         "policies": []

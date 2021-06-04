@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/totals": {
+    "/pimis-edplan/totals": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/totals/count": {
+    "/pimis-edplan/totals/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/totals/{id}": {
+    "/pimis-edplan/totals/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -591,6 +591,9 @@
           "totalreport": {
             "type": "boolean"
           },
+          "firstpage": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -666,6 +669,9 @@
             "type": "boolean"
           },
           "totalreport": {
+            "type": "boolean"
+          },
+          "firstpage": {
             "type": "boolean"
           },
           "published_at": {

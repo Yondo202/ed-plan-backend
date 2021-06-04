@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/approves": {
+    "/pimis-edplan/approves": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/approves/count": {
+    "/pimis-edplan/approves/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/approves/{id}": {
+    "/pimis-edplan/approves/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

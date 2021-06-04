@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/finance-plans": {
+    "/pimis-edplan/finance-plans": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -259,7 +259,7 @@
         }
       }
     },
-    "/finance-plans/count": {
+    "/pimis-edplan/finance-plans/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -316,7 +316,7 @@
         "parameters": []
       }
     },
-    "/finance-plans/{id}": {
+    "/pimis-edplan/finance-plans/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

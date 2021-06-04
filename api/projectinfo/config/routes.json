@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/projectinfos",
+      "path": "/pimis-edplan/projectinfos",
       "handler": "projectinfo.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/projectinfos/count",
+      "path": "/pimis-edplan/projectinfos/count",
       "handler": "projectinfo.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/projectinfos/:id",
+      "path": "/pimis-edplan/projectinfos/:id",
       "handler": "projectinfo.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/projectinfos",
+      "path": "/pimis-edplan/projectinfos",
       "handler": "projectinfo.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/projectinfos/:id",
+      "path": "/pimis-edplan/projectinfos/:id",
       "handler": "projectinfo.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/projectinfos/:id",
+      "path": "/pimis-edplan/projectinfos/:id",
       "handler": "projectinfo.delete",
       "config": {
         "policies": []

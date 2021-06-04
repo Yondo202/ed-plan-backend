@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/businessinfothrees",
+      "path": "/pimis-edplan/businessinfothrees",
       "handler": "businessinfothree.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/businessinfothrees/count",
+      "path": "/pimis-edplan/businessinfothrees/count",
       "handler": "businessinfothree.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/businessinfothrees/:id",
+      "path": "/pimis-edplan/businessinfothrees/:id",
       "handler": "businessinfothree.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/businessinfothrees",
+      "path": "/pimis-edplan/businessinfothrees",
       "handler": "businessinfothree.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/businessinfothrees/:id",
+      "path": "/pimis-edplan/businessinfothrees/:id",
       "handler": "businessinfothree.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/businessinfothrees/:id",
+      "path": "/pimis-edplan/businessinfothrees/:id",
       "handler": "businessinfothree.delete",
       "config": {
         "policies": []

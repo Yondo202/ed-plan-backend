@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/firstpages": {
+    "/pimis-edplan/firstpages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/firstpages/count": {
+    "/pimis-edplan/firstpages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/firstpages/{id}": {
+    "/pimis-edplan/firstpages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -563,11 +563,11 @@
                 "image_url": {
                   "type": "string"
                 },
-                "image_id": {
-                  "type": "string"
-                },
                 "firstpage": {
                   "type": "string"
+                },
+                "image_id": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"

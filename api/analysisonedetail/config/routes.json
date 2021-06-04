@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/analysisonedetails",
+      "path": "/pimis-edplan/analysisonedetails",
       "handler": "analysisonedetail.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisonedetails/count",
+      "path": "/pimis-edplan/analysisonedetails/count",
       "handler": "analysisonedetail.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisonedetails/:id",
+      "path": "/pimis-edplan/analysisonedetails/:id",
       "handler": "analysisonedetail.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/analysisonedetails",
+      "path": "/pimis-edplan/analysisonedetails",
       "handler": "analysisonedetail.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/analysisonedetails/:id",
+      "path": "/pimis-edplan/analysisonedetails/:id",
       "handler": "analysisonedetail.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/analysisonedetails/:id",
+      "path": "/pimis-edplan/analysisonedetails/:id",
       "handler": "analysisonedetail.delete",
       "config": {
         "policies": []

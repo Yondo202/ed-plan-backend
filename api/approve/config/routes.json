@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/approves",
+      "path": "/pimis-edplan/approves",
       "handler": "approve.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/approves/count",
+      "path": "/pimis-edplan/approves/count",
       "handler": "approve.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/approves/:id",
+      "path": "/pimis-edplan/approves/:id",
       "handler": "approve.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/approves",
+      "path": "/pimis-edplan/approves",
       "handler": "approve.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/approves/:id",
+      "path": "/pimis-edplan/approves/:id",
       "handler": "approve.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/approves/:id",
+      "path": "/pimis-edplan/approves/:id",
       "handler": "approve.delete",
       "config": {
         "policies": []

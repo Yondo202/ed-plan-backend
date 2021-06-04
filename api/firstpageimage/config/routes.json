@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/firstpageimages",
+      "path": "/pimis-edplan/firstpageimages",
       "handler": "firstpageimage.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/firstpageimages/count",
+      "path": "/pimis-edplan/firstpageimages/count",
       "handler": "firstpageimage.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/firstpageimages/:id",
+      "path": "/pimis-edplan/firstpageimages/:id",
       "handler": "firstpageimage.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/firstpageimages",
+      "path": "/pimis-edplan/firstpageimages",
       "handler": "firstpageimage.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/firstpageimages/:id",
+      "path": "/pimis-edplan/firstpageimages/:id",
       "handler": "firstpageimage.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/firstpageimages/:id",
+      "path": "/pimis-edplan/firstpageimages/:id",
       "handler": "firstpageimage.delete",
       "config": {
         "policies": []

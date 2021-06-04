@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/busthrees",
+      "path": "/pimis-edplan/busthrees",
       "handler": "busthree.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/busthrees/count",
+      "path": "/pimis-edplan/busthrees/count",
       "handler": "busthree.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/busthrees/:id",
+      "path": "/pimis-edplan/busthrees/:id",
       "handler": "busthree.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/busthrees",
+      "path": "/pimis-edplan/busthrees",
       "handler": "busthree.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/busthrees/:id",
+      "path": "/pimis-edplan/busthrees/:id",
       "handler": "busthree.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/busthrees/:id",
+      "path": "/pimis-edplan/busthrees/:id",
       "handler": "busthree.delete",
       "config": {
         "policies": []

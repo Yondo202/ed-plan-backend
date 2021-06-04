@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/busthreedetails": {
+    "/pimis-edplan/busthreedetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/busthreedetails/count": {
+    "/pimis-edplan/busthreedetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/busthreedetails/{id}": {
+    "/pimis-edplan/busthreedetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

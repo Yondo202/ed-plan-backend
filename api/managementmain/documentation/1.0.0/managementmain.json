@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/managementmains": {
+    "/pimis-edplan/managementmains": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/managementmains/count": {
+    "/pimis-edplan/managementmains/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/managementmains/{id}": {
+    "/pimis-edplan/managementmains/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

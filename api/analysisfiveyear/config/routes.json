@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/analysisfiveyears",
+      "path": "/pimis-edplan/analysisfiveyears",
       "handler": "analysisfiveyear.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisfiveyears/count",
+      "path": "/pimis-edplan/analysisfiveyears/count",
       "handler": "analysisfiveyear.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisfiveyears/:id",
+      "path": "/pimis-edplan/analysisfiveyears/:id",
       "handler": "analysisfiveyear.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/analysisfiveyears",
+      "path": "/pimis-edplan/analysisfiveyears",
       "handler": "analysisfiveyear.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/analysisfiveyears/:id",
+      "path": "/pimis-edplan/analysisfiveyears/:id",
       "handler": "analysisfiveyear.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/analysisfiveyears/:id",
+      "path": "/pimis-edplan/analysisfiveyears/:id",
       "handler": "analysisfiveyear.delete",
       "config": {
         "policies": []

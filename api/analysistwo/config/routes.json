@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/analysistwos",
+      "path": "/pimis-edplan/analysistwos",
       "handler": "analysistwo.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysistwos/count",
+      "path": "/pimis-edplan/analysistwos/count",
       "handler": "analysistwo.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysistwos/:id",
+      "path": "/pimis-edplan/analysistwos/:id",
       "handler": "analysistwo.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/analysistwos",
+      "path": "/pimis-edplan/analysistwos",
       "handler": "analysistwo.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/analysistwos/:id",
+      "path": "/pimis-edplan/analysistwos/:id",
       "handler": "analysistwo.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/analysistwos/:id",
+      "path": "/pimis-edplan/analysistwos/:id",
       "handler": "analysistwo.delete",
       "config": {
         "policies": []

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/03/2021 4:58:27 PM"
+    "x-generation-date": "06/04/2021 12:48:47 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,7 +45,7 @@
     }
   ],
   "paths": {
-    "/analysisfives": {
+    "/pimis-edplan/edplan/analysisfives": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -236,70 +236,9 @@
             "deprecated": false
           }
         ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Analysisfive"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Analysisfive"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnalysisfive"
-              }
-            }
-          }
-        }
       }
     },
-    "/analysisfives/count": {
+    "/pimis-edplan/pimis-edplan/analysisfives/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -356,7 +295,7 @@
         "parameters": []
       }
     },
-    "/analysisfives/{id}": {
+    "/pimis-edplan/pimis-edplan/analysisfives/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -556,7 +495,70 @@
         ]
       }
     },
-    "/analysisfiveyears": {
+    "/pimis-edplan/pimis-edplan/analysisfives": {
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Analysisfive"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Analysisfive"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewAnalysisfive"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pimis-edplan/analysisfiveyears": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -810,7 +812,7 @@
         }
       }
     },
-    "/analysisfiveyears/count": {
+    "/pimis-edplan/analysisfiveyears/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -867,7 +869,7 @@
         "parameters": []
       }
     },
-    "/analysisfiveyears/{id}": {
+    "/pimis-edplan/analysisfiveyears/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1067,7 +1069,7 @@
         ]
       }
     },
-    "/analysisfours": {
+    "/pimis-edplan/analysisfours": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1321,7 +1323,7 @@
         }
       }
     },
-    "/analysisfours/count": {
+    "/pimis-edplan/analysisfours/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1378,7 +1380,7 @@
         "parameters": []
       }
     },
-    "/analysisfours/{id}": {
+    "/pimis-edplan/analysisfours/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1578,7 +1580,7 @@
         ]
       }
     },
-    "/analysisones": {
+    "/pimis-edplan/analysisones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1832,7 +1834,7 @@
         }
       }
     },
-    "/analysisones/count": {
+    "/pimis-edplan/analysisones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -1889,7 +1891,7 @@
         "parameters": []
       }
     },
-    "/analysisones/{id}": {
+    "/pimis-edplan/analysisones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2089,7 +2091,7 @@
         ]
       }
     },
-    "/analysisonebodies": {
+    "/pimis-edplan/analysisonebodies": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2343,7 +2345,7 @@
         }
       }
     },
-    "/analysisonebodies/count": {
+    "/pimis-edplan/analysisonebodies/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2400,7 +2402,7 @@
         "parameters": []
       }
     },
-    "/analysisonebodies/{id}": {
+    "/pimis-edplan/analysisonebodies/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2600,7 +2602,7 @@
         ]
       }
     },
-    "/analysisonedetails": {
+    "/pimis-edplan/analysisonedetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2854,7 +2856,7 @@
         }
       }
     },
-    "/analysisonedetails/count": {
+    "/pimis-edplan/analysisonedetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -2911,7 +2913,7 @@
         "parameters": []
       }
     },
-    "/analysisonedetails/{id}": {
+    "/pimis-edplan/analysisonedetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3111,7 +3113,7 @@
         ]
       }
     },
-    "/analysisthrees": {
+    "/pimis-edplan/analysisthrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3365,7 +3367,7 @@
         }
       }
     },
-    "/analysisthrees/count": {
+    "/pimis-edplan/analysisthrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3422,7 +3424,7 @@
         "parameters": []
       }
     },
-    "/analysisthrees/{id}": {
+    "/pimis-edplan/analysisthrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3622,7 +3624,7 @@
         ]
       }
     },
-    "/analysistwos": {
+    "/pimis-edplan/analysistwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3876,7 +3878,7 @@
         }
       }
     },
-    "/analysistwos/count": {
+    "/pimis-edplan/analysistwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -3933,7 +3935,7 @@
         "parameters": []
       }
     },
-    "/analysistwos/{id}": {
+    "/pimis-edplan/analysistwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4133,7 +4135,7 @@
         ]
       }
     },
-    "/approves": {
+    "/pimis-edplan/approves": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4387,7 +4389,7 @@
         }
       }
     },
-    "/approves/count": {
+    "/pimis-edplan/approves/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4444,7 +4446,7 @@
         "parameters": []
       }
     },
-    "/approves/{id}": {
+    "/pimis-edplan/approves/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4644,7 +4646,7 @@
         ]
       }
     },
-    "/businessinfoones": {
+    "/pimis-edplan/businessinfoones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4898,7 +4900,7 @@
         }
       }
     },
-    "/businessinfoones/count": {
+    "/pimis-edplan/businessinfoones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -4955,7 +4957,7 @@
         "parameters": []
       }
     },
-    "/businessinfoones/{id}": {
+    "/pimis-edplan/businessinfoones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5155,7 +5157,7 @@
         ]
       }
     },
-    "/businessinfothrees": {
+    "/pimis-edplan/businessinfothrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5409,7 +5411,7 @@
         }
       }
     },
-    "/businessinfothrees/count": {
+    "/pimis-edplan/businessinfothrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5466,7 +5468,7 @@
         "parameters": []
       }
     },
-    "/businessinfothrees/{id}": {
+    "/pimis-edplan/businessinfothrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5666,7 +5668,7 @@
         ]
       }
     },
-    "/businessresults": {
+    "/pimis-edplan/businessresults": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5920,7 +5922,7 @@
         }
       }
     },
-    "/businessresults/count": {
+    "/pimis-edplan/businessresults/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -5977,7 +5979,7 @@
         "parameters": []
       }
     },
-    "/businessresults/{id}": {
+    "/pimis-edplan/businessresults/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6177,7 +6179,7 @@
         ]
       }
     },
-    "/busones": {
+    "/pimis-edplan/busones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6431,7 +6433,7 @@
         }
       }
     },
-    "/busones/count": {
+    "/pimis-edplan/busones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6488,7 +6490,7 @@
         "parameters": []
       }
     },
-    "/busones/{id}": {
+    "/pimis-edplan/busones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6688,7 +6690,7 @@
         ]
       }
     },
-    "/busonedetails": {
+    "/pimis-edplan/busonedetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6942,7 +6944,7 @@
         }
       }
     },
-    "/busonedetails/count": {
+    "/pimis-edplan/busonedetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -6999,7 +7001,7 @@
         "parameters": []
       }
     },
-    "/busonedetails/{id}": {
+    "/pimis-edplan/busonedetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -7199,7 +7201,7 @@
         ]
       }
     },
-    "/busthrees": {
+    "/pimis-edplan/busthrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -7453,7 +7455,7 @@
         }
       }
     },
-    "/busthrees/count": {
+    "/pimis-edplan/busthrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -7510,7 +7512,7 @@
         "parameters": []
       }
     },
-    "/busthrees/{id}": {
+    "/pimis-edplan/busthrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -7710,7 +7712,7 @@
         ]
       }
     },
-    "/busthreedetails": {
+    "/pimis-edplan/busthreedetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -7964,7 +7966,7 @@
         }
       }
     },
-    "/busthreedetails/count": {
+    "/pimis-edplan/busthreedetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8021,7 +8023,7 @@
         "parameters": []
       }
     },
-    "/busthreedetails/{id}": {
+    "/pimis-edplan/busthreedetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8221,7 +8223,7 @@
         ]
       }
     },
-    "/bustwos": {
+    "/pimis-edplan/bustwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8475,7 +8477,7 @@
         }
       }
     },
-    "/bustwos/count": {
+    "/pimis-edplan/bustwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8532,7 +8534,7 @@
         "parameters": []
       }
     },
-    "/bustwos/{id}": {
+    "/pimis-edplan/bustwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8732,7 +8734,7 @@
         ]
       }
     },
-    "/bustwodetails": {
+    "/pimis-edplan/bustwodetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -8986,7 +8988,7 @@
         }
       }
     },
-    "/bustwodetails/count": {
+    "/pimis-edplan/bustwodetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -9043,7 +9045,7 @@
         "parameters": []
       }
     },
-    "/bustwodetails/{id}": {
+    "/pimis-edplan/bustwodetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -9243,7 +9245,7 @@
         ]
       }
     },
-    "/edpuploads": {
+    "/pimis-edplan/edpuploads": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -9497,7 +9499,7 @@
         }
       }
     },
-    "/edpuploads/count": {
+    "/pimis-edplan/edpuploads/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -9554,7 +9556,7 @@
         "parameters": []
       }
     },
-    "/edpuploads/{id}": {
+    "/pimis-edplan/edpuploads/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -9754,7 +9756,7 @@
         ]
       }
     },
-    "/export-products": {
+    "/pimis-edplan/export-products": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10013,7 +10015,7 @@
         }
       }
     },
-    "/export-products/count": {
+    "/pimis-edplan/export-products/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10070,7 +10072,7 @@
         "parameters": []
       }
     },
-    "/export-products/{id}": {
+    "/pimis-edplan/export-products/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10278,7 +10280,7 @@
         ]
       }
     },
-    "/exportones": {
+    "/pimis-edplan/exportones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10532,7 +10534,7 @@
         }
       }
     },
-    "/exportones/count": {
+    "/pimis-edplan/exportones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10589,7 +10591,7 @@
         "parameters": []
       }
     },
-    "/exportones/{id}": {
+    "/pimis-edplan/exportones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10789,7 +10791,7 @@
         ]
       }
     },
-    "/exportthrees": {
+    "/pimis-edplan/exportthrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11043,7 +11045,7 @@
         }
       }
     },
-    "/exportthrees/count": {
+    "/pimis-edplan/exportthrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11100,7 +11102,7 @@
         "parameters": []
       }
     },
-    "/exportthrees/{id}": {
+    "/pimis-edplan/exportthrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11300,7 +11302,7 @@
         ]
       }
     },
-    "/exporttwos": {
+    "/pimis-edplan/exporttwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11554,7 +11556,7 @@
         }
       }
     },
-    "/exporttwos/count": {
+    "/pimis-edplan/exporttwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11611,7 +11613,7 @@
         "parameters": []
       }
     },
-    "/exporttwos/{id}": {
+    "/pimis-edplan/exporttwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -11811,7 +11813,7 @@
         ]
       }
     },
-    "/finance-plans": {
+    "/pimis-edplan/finance-plans": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12070,7 +12072,7 @@
         }
       }
     },
-    "/finance-plans/count": {
+    "/pimis-edplan/finance-plans/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12127,7 +12129,7 @@
         "parameters": []
       }
     },
-    "/finance-plans/{id}": {
+    "/pimis-edplan/finance-plans/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12335,7 +12337,7 @@
         ]
       }
     },
-    "/firstpages": {
+    "/pimis-edplan/firstpages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12589,7 +12591,7 @@
         }
       }
     },
-    "/firstpages/count": {
+    "/pimis-edplan/firstpages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12646,7 +12648,7 @@
         "parameters": []
       }
     },
-    "/firstpages/{id}": {
+    "/pimis-edplan/firstpages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12846,7 +12848,7 @@
         ]
       }
     },
-    "/firstpageimages": {
+    "/pimis-edplan/firstpageimages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13100,7 +13102,7 @@
         }
       }
     },
-    "/firstpageimages/count": {
+    "/pimis-edplan/firstpageimages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13157,7 +13159,7 @@
         "parameters": []
       }
     },
-    "/firstpageimages/{id}": {
+    "/pimis-edplan/firstpageimages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13357,7 +13359,7 @@
         ]
       }
     },
-    "/infoones": {
+    "/pimis-edplan/infoones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13611,7 +13613,7 @@
         }
       }
     },
-    "/infoones/count": {
+    "/pimis-edplan/infoones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13668,7 +13670,7 @@
         "parameters": []
       }
     },
-    "/infoones/{id}": {
+    "/pimis-edplan/infoones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -13868,7 +13870,7 @@
         ]
       }
     },
-    "/infothrees": {
+    "/pimis-edplan/infothrees": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -14122,7 +14124,7 @@
         }
       }
     },
-    "/infothrees/count": {
+    "/pimis-edplan/infothrees/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -14179,7 +14181,7 @@
         "parameters": []
       }
     },
-    "/infothrees/{id}": {
+    "/pimis-edplan/infothrees/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -14379,13 +14381,13 @@
         ]
       }
     },
-    "/infothreefiles": {
+    "/pimis-edplan/infothreefiles": {
       "get": {
         "deprecated": false,
-        "description": "Find all the infothreefiles's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -14573,10 +14575,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new infothreefiles record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -14633,13 +14635,13 @@
         }
       }
     },
-    "/infothreefiles/count": {
+    "/pimis-edplan/infothreefiles/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of infothreefiles documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -14690,13 +14692,13 @@
         "parameters": []
       }
     },
-    "/infothreefiles/{id}": {
+    "/pimis-edplan/infothreefiles/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one infothreefiles record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -14755,10 +14757,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single infothreefiles record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve infothreefiles document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -14828,10 +14830,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single infothreefiles record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single infothreefiles based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -14890,7 +14892,7 @@
         ]
       }
     },
-    "/infotwos": {
+    "/pimis-edplan/infotwos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15144,7 +15146,7 @@
         }
       }
     },
-    "/infotwos/count": {
+    "/pimis-edplan/infotwos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15201,7 +15203,7 @@
         "parameters": []
       }
     },
-    "/infotwos/{id}": {
+    "/pimis-edplan/infotwos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15401,7 +15403,7 @@
         ]
       }
     },
-    "/infotwodetails": {
+    "/pimis-edplan/infotwodetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15655,7 +15657,7 @@
         }
       }
     },
-    "/infotwodetails/count": {
+    "/pimis-edplan/infotwodetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15712,7 +15714,7 @@
         "parameters": []
       }
     },
-    "/infotwodetails/{id}": {
+    "/pimis-edplan/infotwodetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -15912,7 +15914,7 @@
         ]
       }
     },
-    "/managementdetails": {
+    "/pimis-edplan/managementdetails": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16166,7 +16168,7 @@
         }
       }
     },
-    "/managementdetails/count": {
+    "/pimis-edplan/managementdetails/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16223,7 +16225,7 @@
         "parameters": []
       }
     },
-    "/managementdetails/{id}": {
+    "/pimis-edplan/managementdetails/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16423,7 +16425,7 @@
         ]
       }
     },
-    "/managementmains": {
+    "/pimis-edplan/managementmains": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16677,7 +16679,7 @@
         }
       }
     },
-    "/managementmains/count": {
+    "/pimis-edplan/managementmains/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16734,7 +16736,7 @@
         "parameters": []
       }
     },
-    "/managementmains/{id}": {
+    "/pimis-edplan/managementmains/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -16934,7 +16936,7 @@
         ]
       }
     },
-    "/marketings": {
+    "/pimis-edplan/marketings": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -17188,7 +17190,7 @@
         }
       }
     },
-    "/marketings/count": {
+    "/pimis-edplan/marketings/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -17245,7 +17247,7 @@
         "parameters": []
       }
     },
-    "/marketings/{id}": {
+    "/pimis-edplan/marketings/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -17445,13 +17447,13 @@
         ]
       }
     },
-    "/productcountrys": {
+    "/pimis-edplan/productcountrys": {
       "get": {
         "deprecated": false,
-        "description": "Find all the productcountrys's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve productcountrys document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -17639,10 +17641,10 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new productcountrys record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve productcountrys document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -17699,13 +17701,13 @@
         }
       }
     },
-    "/productcountrys/count": {
+    "/pimis-edplan/productcountrys/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of productcountrys documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve productcountrys document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -17756,13 +17758,13 @@
         "parameters": []
       }
     },
-    "/productcountrys/{id}": {
+    "/pimis-edplan/productcountrys/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one productcountrys record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve productcountrys document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -17821,10 +17823,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single productcountrys record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve productcountrys document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -17894,10 +17896,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single productcountrys record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single productcountrys based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -17956,7 +17958,7 @@
         ]
       }
     },
-    "/projectinfos": {
+    "/pimis-edplan/projectinfos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -18210,7 +18212,7 @@
         }
       }
     },
-    "/projectinfos/count": {
+    "/pimis-edplan/projectinfos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -18267,7 +18269,7 @@
         "parameters": []
       }
     },
-    "/projectinfos/{id}": {
+    "/pimis-edplan/projectinfos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -18467,7 +18469,7 @@
         ]
       }
     },
-    "/totals": {
+    "/pimis-edplan/totals": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -18721,7 +18723,7 @@
         }
       }
     },
-    "/totals/count": {
+    "/pimis-edplan/totals/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -18778,7 +18780,7 @@
         "parameters": []
       }
     },
-    "/totals/{id}": {
+    "/pimis-edplan/totals/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -23612,11 +23614,11 @@
                 "image_url": {
                   "type": "string"
                 },
-                "image_id": {
-                  "type": "string"
-                },
                 "firstpage": {
                   "type": "string"
+                },
+                "image_id": {
+                  "type": "integer"
                 },
                 "published_at": {
                   "type": "string"
@@ -23695,9 +23697,6 @@
           "image_url": {
             "type": "string"
           },
-          "image_id": {
-            "type": "string"
-          },
           "firstpage": {
             "required": [
               "id"
@@ -23747,6 +23746,9 @@
               }
             }
           },
+          "image_id": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -23761,11 +23763,11 @@
           "image_url": {
             "type": "string"
           },
-          "image_id": {
-            "type": "string"
-          },
           "firstpage": {
             "type": "string"
+          },
+          "image_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -24706,6 +24708,9 @@
           "totalreport": {
             "type": "boolean"
           },
+          "firstpage": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -24781,6 +24786,9 @@
             "type": "boolean"
           },
           "totalreport": {
+            "type": "boolean"
+          },
+          "firstpage": {
             "type": "boolean"
           },
           "published_at": {

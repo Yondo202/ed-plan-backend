@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/bustwodetails",
+      "path": "/pimis-edplan/bustwodetails",
       "handler": "bustwodetail.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/bustwodetails/count",
+      "path": "/pimis-edplan/bustwodetails/count",
       "handler": "bustwodetail.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/bustwodetails/:id",
+      "path": "/pimis-edplan/bustwodetails/:id",
       "handler": "bustwodetail.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/bustwodetails",
+      "path": "/pimis-edplan/bustwodetails",
       "handler": "bustwodetail.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/bustwodetails/:id",
+      "path": "/pimis-edplan/bustwodetails/:id",
       "handler": "bustwodetail.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/bustwodetails/:id",
+      "path": "/pimis-edplan/bustwodetails/:id",
       "handler": "bustwodetail.delete",
       "config": {
         "policies": []

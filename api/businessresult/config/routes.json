@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/businessresults",
+      "path": "/pimis-edplan/businessresults",
       "handler": "businessresult.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/businessresults/count",
+      "path": "/pimis-edplan/businessresults/count",
       "handler": "businessresult.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/businessresults/:id",
+      "path": "/pimis-edplan/businessresults/:id",
       "handler": "businessresult.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/businessresults",
+      "path": "/pimis-edplan/businessresults",
       "handler": "businessresult.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/businessresults/:id",
+      "path": "/pimis-edplan/businessresults/:id",
       "handler": "businessresult.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/businessresults/:id",
+      "path": "/pimis-edplan/businessresults/:id",
       "handler": "businessresult.delete",
       "config": {
         "policies": []

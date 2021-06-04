@@ -80,6 +80,9 @@
     },
     "totalreport": {
       "type": "boolean"
+    },
+    "firstpage": {
+      "type": "boolean"
     }
   }
 }

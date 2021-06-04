@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/analysisfiveyears": {
+    "/pimis-edplan/analysisfiveyears": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/analysisfiveyears/count": {
+    "/pimis-edplan/analysisfiveyears/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/analysisfiveyears/{id}": {
+    "/pimis-edplan/analysisfiveyears/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

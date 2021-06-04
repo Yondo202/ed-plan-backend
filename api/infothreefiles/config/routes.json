@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/infothreefiles",
+      "path": "/pimis-edplan/infothreefiles",
       "handler": "infothreefiles.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/infothreefiles/count",
+      "path": "/pimis-edplan/infothreefiles/count",
       "handler": "infothreefiles.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/infothreefiles/:id",
+      "path": "/pimis-edplan/infothreefiles/:id",
       "handler": "infothreefiles.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/infothreefiles",
+      "path": "/pimis-edplan/infothreefiles",
       "handler": "infothreefiles.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/infothreefiles/:id",
+      "path": "/pimis-edplan/infothreefiles/:id",
       "handler": "infothreefiles.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/infothreefiles/:id",
+      "path": "/pimis-edplan/infothreefiles/:id",
       "handler": "infothreefiles.delete",
       "config": {
         "policies": []

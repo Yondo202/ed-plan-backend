@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/totals",
+      "path": "/pimis-edplan/totals",
       "handler": "total.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/totals/count",
+      "path": "/pimis-edplan/totals/count",
       "handler": "total.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/totals/:id",
+      "path": "/pimis-edplan/totals/:id",
       "handler": "total.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/totals",
+      "path": "/pimis-edplan/totals",
       "handler": "total.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/totals/:id",
+      "path": "/pimis-edplan/totals/:id",
       "handler": "total.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/totals/:id",
+      "path": "/pimis-edplan/totals/:id",
       "handler": "total.delete",
       "config": {
         "policies": []

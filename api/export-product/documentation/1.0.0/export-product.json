@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/export-products": {
+    "/pimis-edplan/export-products": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -259,7 +259,7 @@
         }
       }
     },
-    "/export-products/count": {
+    "/pimis-edplan/export-products/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -316,7 +316,7 @@
         "parameters": []
       }
     },
-    "/export-products/{id}": {
+    "/pimis-edplan/export-products/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

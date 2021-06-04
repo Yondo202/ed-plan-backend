@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/analysisonebodies": {
+    "/pimis-edplan/analysisonebodies": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/analysisonebodies/count": {
+    "/pimis-edplan/analysisonebodies/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/analysisonebodies/{id}": {
+    "/pimis-edplan/analysisonebodies/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

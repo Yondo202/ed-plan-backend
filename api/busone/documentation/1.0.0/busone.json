@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/busones": {
+    "/pimis-edplan/busones": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -254,7 +254,7 @@
         }
       }
     },
-    "/busones/count": {
+    "/pimis-edplan/busones/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,7 +311,7 @@
         "parameters": []
       }
     },
-    "/busones/{id}": {
+    "/pimis-edplan/busones/{id}": {
       "get": {
         "deprecated": false,
         "description": "",

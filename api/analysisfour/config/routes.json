@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/analysisfours",
+      "path": "/pimis-edplan/analysisfours",
       "handler": "analysisfour.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisfours/count",
+      "path": "/pimis-edplan/analysisfours/count",
       "handler": "analysisfour.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/analysisfours/:id",
+      "path": "/pimis-edplan/analysisfours/:id",
       "handler": "analysisfour.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/analysisfours",
+      "path": "/pimis-edplan/analysisfours",
       "handler": "analysisfour.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/analysisfours/:id",
+      "path": "/pimis-edplan/analysisfours/:id",
       "handler": "analysisfour.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/analysisfours/:id",
+      "path": "/pimis-edplan/analysisfours/:id",
       "handler": "analysisfour.delete",
       "config": {
         "policies": []
