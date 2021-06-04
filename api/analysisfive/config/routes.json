@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/pimis-edplan/edplan/analysisfives",
+      "path": "/pimis-edplan/analysisfives",
       "handler": "analysisfive.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/pimis-edplan/pimis-edplan/analysisfives/count",
+      "path": "/pimis-edplan/analysisfives/count",
       "handler": "analysisfive.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/pimis-edplan/pimis-edplan/analysisfives/:id",
+      "path": "/pimis-edplan/analysisfives/:id",
       "handler": "analysisfive.findOne",
       "config": {
         "policies": []
@@ -26,7 +26,7 @@
     },
     {
       "method": "POST",
-      "path": "/pimis-edplan/pimis-edplan/analysisfives",
+      "path": "/pimis-edplan/analysisfives",
       "handler": "analysisfive.create",
       "config": {
         "policies": []
@@ -34,7 +34,7 @@
     },
     {
       "method": "PUT",
-      "path": "/pimis-edplan/pimis-edplan/analysisfives/:id",
+      "path": "/pimis-edplan/analysisfives/:id",
       "handler": "analysisfive.update",
       "config": {
         "policies": []
@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/pimis-edplan/pimis-edplan/analysisfives/:id",
+      "path": "/pimis-edplan/analysisfives/:id",
       "handler": "analysisfive.delete",
       "config": {
         "policies": []

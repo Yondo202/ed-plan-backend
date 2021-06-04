@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/04/2021 12:48:47 PM"
+    "x-generation-date": "06/04/2021 3:36:18 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,7 +45,7 @@
     }
   ],
   "paths": {
-    "/pimis-edplan/edplan/analysisfives": {
+    "/pimis-edplan/analysisfives": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -236,9 +236,70 @@
             "deprecated": false
           }
         ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Analysisfive"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Analysisfive"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewAnalysisfive"
+              }
+            }
+          }
+        }
       }
     },
-    "/pimis-edplan/pimis-edplan/analysisfives/count": {
+    "/pimis-edplan/analysisfives/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -295,7 +356,7 @@
         "parameters": []
       }
     },
-    "/pimis-edplan/pimis-edplan/analysisfives/{id}": {
+    "/pimis-edplan/analysisfives/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -493,69 +554,6 @@
             }
           }
         ]
-      }
-    },
-    "/pimis-edplan/pimis-edplan/analysisfives": {
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Analysisfive"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Analysisfive"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAnalysisfive"
-              }
-            }
-          }
-        }
       }
     },
     "/pimis-edplan/analysisfiveyears": {
