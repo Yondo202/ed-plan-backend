@@ -594,6 +594,9 @@
           "firstpage": {
             "type": "boolean"
           },
+          "exportthree": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -672,6 +675,9 @@
             "type": "boolean"
           },
           "firstpage": {
+            "type": "boolean"
+          },
+          "exportthree": {
             "type": "boolean"
           },
           "published_at": {

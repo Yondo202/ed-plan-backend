@@ -83,6 +83,9 @@
     },
     "firstpage": {
       "type": "boolean"
+    },
+    "exportthree": {
+      "type": "boolean"
     }
   }
 }
