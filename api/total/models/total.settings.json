@@ -86,9 +86,12 @@
     },
     "exportthree": {
       "type": "boolean"
+<<<<<<< HEAD
     },
     "infohistory": {
       "type": "boolean"
+=======
+>>>>>>> 1685e6cfd81fa29d35632dfb2096abb5e1b7d3db
     }
   }
 }
