@@ -36,6 +36,9 @@
     "export_product": {
       "via": "exportones",
       "model": "export-product"
+    },
+    "measure": {
+      "type": "string"
     }
   }
 }

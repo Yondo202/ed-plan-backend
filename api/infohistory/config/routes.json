@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/infohistories",
+      "handler": "infohistory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/infohistories/count",
+      "handler": "infohistory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/infohistories/:id",
+      "handler": "infohistory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pimis-edplan/infohistories",
+      "handler": "infohistory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pimis-edplan/infohistories/:id",
+      "handler": "infohistory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pimis-edplan/infohistories/:id",
+      "handler": "infohistory.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

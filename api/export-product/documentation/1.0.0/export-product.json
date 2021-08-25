@@ -606,6 +606,9 @@
                 "export_product": {
                   "type": "string"
                 },
+                "measure": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

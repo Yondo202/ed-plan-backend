@@ -83,6 +83,12 @@
     },
     "firstpage": {
       "type": "boolean"
+    },
+    "exportthree": {
+      "type": "boolean"
+    },
+    "infohistory": {
+      "type": "boolean"
     }
   }
 }

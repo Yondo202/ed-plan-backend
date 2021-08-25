@@ -29,8 +29,8 @@
       "type": "string"
     },
     "infotwo": {
-      "model": "infotwo",
-      "via": "edpuploads"
+      "via": "edpuploads",
+      "model": "infotwo"
     },
     "infothreefile": {
       "via": "edpuploads",

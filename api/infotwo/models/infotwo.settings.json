@@ -39,6 +39,9 @@
     "edpuploads": {
       "via": "infotwo",
       "collection": "edpupload"
+    },
+    "established_date": {
+      "type": "date"
     }
   }
 }

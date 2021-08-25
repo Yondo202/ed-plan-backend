@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infohistories",
+  "info": {
+    "name": "infohistory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}
