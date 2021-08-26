@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/buy-plans",
+      "handler": "buy-plan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/buy-plans/count",
+      "handler": "buy-plan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/buy-plans/:id",
+      "handler": "buy-plan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pimis-edplan/buy-plans",
+      "handler": "buy-plan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pimis-edplan/buy-plans/:id",
+      "handler": "buy-plan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pimis-edplan/buy-plans/:id",
+      "handler": "buy-plan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

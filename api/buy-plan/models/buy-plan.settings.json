@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buy_plans",
+  "info": {
+    "name": "buy-plan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_cost": {
+      "type": "biginteger"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "foundation_date": {
+      "type": "date"
+    },
+    "tender_date": {
+      "type": "date"
+    },
+    "contract_startdate": {
+      "type": "date"
+    },
+    "contract_enddate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "some_indicator": {
+      "type": "string"
+    },
+    "team_check": {
+      "type": "boolean"
+    },
+    "idd": {
+      "type": "biginteger"
+    }
+  }
+}

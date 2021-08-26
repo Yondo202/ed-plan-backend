@@ -600,6 +600,9 @@
           "infohistory": {
             "type": "boolean"
           },
+          "buy_plan": {
+            "type": "boolean"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -684,6 +687,9 @@
             "type": "boolean"
           },
           "infohistory": {
+            "type": "boolean"
+          },
+          "buy_plan": {
             "type": "boolean"
           },
           "published_at": {
