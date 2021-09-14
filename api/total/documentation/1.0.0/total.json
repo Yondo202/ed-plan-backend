@@ -523,19 +523,16 @@
             "type": "string"
           },
           "projectinfo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "idd": {
             "type": "integer"
           },
           "infoone": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infotwo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infothree": {
             "type": "boolean"
@@ -612,19 +609,16 @@
       "NewTotal": {
         "properties": {
           "projectinfo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "idd": {
             "type": "integer"
           },
           "infoone": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infotwo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infothree": {
             "type": "boolean"

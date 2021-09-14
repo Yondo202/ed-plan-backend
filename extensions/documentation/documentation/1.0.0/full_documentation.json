@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/26/2021 11:32:40 AM"
+    "x-generation-date": "09/14/2021 2:01:24 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -25829,19 +25829,16 @@
             "type": "string"
           },
           "projectinfo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "idd": {
             "type": "integer"
           },
           "infoone": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infotwo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infothree": {
             "type": "boolean"
@@ -25918,19 +25915,16 @@
       "NewTotal": {
         "properties": {
           "projectinfo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "idd": {
             "type": "integer"
           },
           "infoone": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infotwo": {
-            "type": "boolean",
-            "default": false
+            "type": "boolean"
           },
           "infothree": {
             "type": "boolean"

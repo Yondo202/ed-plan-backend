@@ -13,19 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "projectinfo": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "idd": {
       "type": "biginteger"
     },
     "infoone": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "infotwo": {
-      "type": "boolean",
-      "default": false
+      "type": "boolean"
     },
     "infothree": {
       "type": "boolean"
