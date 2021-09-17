@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "exportthrees",
   "info": {
-    "name": "exportthree"
+    "name": "exportthree",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -35,6 +36,9 @@
     "export_product": {
       "via": "exportthrees",
       "model": "export-product"
+    },
+    "body": {
+      "type": "richtext"
     }
   }
 }

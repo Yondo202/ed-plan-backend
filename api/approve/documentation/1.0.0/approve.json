@@ -543,6 +543,9 @@
           "token": {
             "type": "string"
           },
+          "value": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -570,6 +573,9 @@
             "type": "string"
           },
           "token": {
+            "type": "string"
+          },
+          "value": {
             "type": "string"
           },
           "published_at": {

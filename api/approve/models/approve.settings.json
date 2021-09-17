@@ -32,6 +32,9 @@
     },
     "token": {
       "type": "text"
+    },
+    "value": {
+      "type": "string"
     }
   }
 }

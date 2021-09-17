@@ -609,6 +609,9 @@
                 "measure": {
                   "type": "string"
                 },
+                "body": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -659,6 +662,9 @@
                   "type": "string"
                 },
                 "export_product": {
+                  "type": "string"
+                },
+                "body": {
                   "type": "string"
                 },
                 "published_at": {

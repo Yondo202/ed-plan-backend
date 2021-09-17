@@ -595,6 +595,10 @@
           "measure": {
             "type": "string"
           },
+          "body": {
+            "type": "string",
+            "default": "null"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -629,6 +633,10 @@
           },
           "measure": {
             "type": "string"
+          },
+          "body": {
+            "type": "string",
+            "default": "null"
           },
           "published_at": {
             "type": "string",

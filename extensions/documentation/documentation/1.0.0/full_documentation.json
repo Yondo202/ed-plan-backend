@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/14/2021 2:01:24 PM"
+    "x-generation-date": "09/17/2021 10:54:06 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -23006,6 +23006,9 @@
           "token": {
             "type": "string"
           },
+          "value": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -23033,6 +23036,9 @@
             "type": "string"
           },
           "token": {
+            "type": "string"
+          },
+          "value": {
             "type": "string"
           },
           "published_at": {
@@ -24177,6 +24183,9 @@
                 "measure": {
                   "type": "string"
                 },
+                "body": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -24227,6 +24236,9 @@
                   "type": "string"
                 },
                 "export_product": {
+                  "type": "string"
+                },
+                "body": {
                   "type": "string"
                 },
                 "published_at": {
@@ -24375,6 +24387,10 @@
           "measure": {
             "type": "string"
           },
+          "body": {
+            "type": "string",
+            "default": "null"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -24409,6 +24425,10 @@
           },
           "measure": {
             "type": "string"
+          },
+          "body": {
+            "type": "string",
+            "default": "null"
           },
           "published_at": {
             "type": "string",
@@ -24500,6 +24520,9 @@
               }
             }
           },
+          "body": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -24530,6 +24553,9 @@
             "type": "string"
           },
           "export_product": {
+            "type": "string"
+          },
+          "body": {
             "type": "string"
           },
           "published_at": {

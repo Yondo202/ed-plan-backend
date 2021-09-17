@@ -592,6 +592,9 @@
               }
             }
           },
+          "body": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -622,6 +625,9 @@
             "type": "string"
           },
           "export_product": {
+            "type": "string"
+          },
+          "body": {
             "type": "string"
           },
           "published_at": {

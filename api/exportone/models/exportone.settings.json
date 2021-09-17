@@ -39,6 +39,10 @@
     },
     "measure": {
       "type": "string"
+    },
+    "body": {
+      "type": "richtext",
+      "default": "null"
     }
   }
 }
