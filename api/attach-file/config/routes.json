@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/attach-files",
+      "handler": "attach-file.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/attach-files/count",
+      "handler": "attach-file.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pimis-edplan/attach-files/:id",
+      "handler": "attach-file.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pimis-edplan/attach-files",
+      "handler": "attach-file.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pimis-edplan/attach-files/:id",
+      "handler": "attach-file.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pimis-edplan/attach-files/:id",
+      "handler": "attach-file.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

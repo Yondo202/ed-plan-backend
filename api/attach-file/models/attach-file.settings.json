@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attach_files",
+  "info": {
+    "name": "attach-file",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idd": {
+      "type": "biginteger"
+    },
+    "fileUrl": {
+      "type": "string"
+    },
+    "fileId": {
+      "type": "biginteger"
+    },
+    "mimetype": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "size": {
+      "type": "biginteger"
+    }
+  }
+}
